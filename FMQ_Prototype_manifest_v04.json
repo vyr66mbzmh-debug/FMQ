@@ -1,0 +1,431 @@
+{
+  "version": "v04",
+  "available_skills": 40,
+  "total_skills": 137,
+  "questions": 938,
+  "solution_sections": 2441,
+  "additional_worked_solutions": 1,
+  "math_expressions": 17461,
+  "diagram_files": 529,
+  "included": [
+    {
+      "skill": "1.01",
+      "title": "Complex Numbers: Algebra",
+      "questions": 48,
+      "solution_sections": 128,
+      "questions_tex_sha256": "a85310037b554d4e5f238cf19f2f156b89d64467295b3148cc2ade82b8e37163",
+      "solutions_tex_sha256": "5db6057ab685a6628e4cf2c38d186d5fb2f6d3bfa98dc7308f999240849d5bab"
+    },
+    {
+      "skill": "1.02",
+      "title": "Complex Numbers: Quadratic Equations",
+      "questions": 12,
+      "solution_sections": 34,
+      "questions_tex_sha256": "e268f05a1f2e9fde15e0a960f4ccfb6e46fdcf70262e7aa3105b1f28ebce4d3a",
+      "solutions_tex_sha256": "679987198abc30f09832b8371fa52433d20a7d0ea19b2c9a7751112b8b80ce13"
+    },
+    {
+      "skill": "1.03",
+      "title": "Complex Numbers: Argand Diagrams",
+      "questions": 27,
+      "solution_sections": 77,
+      "questions_tex_sha256": "da7c4b1c5f14fd4d9893141e0fea106679324c9b5667335a70b17ce69e76b01c",
+      "solutions_tex_sha256": "387cf89f6c469eebe3e1f23cc4b32c4e627a8562ef8d89cdac7634de8f498c26"
+    },
+    {
+      "skill": "1.04",
+      "title": "Complex Numbers: Roots of Equations",
+      "questions": 53,
+      "solution_sections": 94,
+      "questions_tex_sha256": "88ba03b9249d52c72724f6c977c38d6801f21134b0f76990257ed0816931eb72",
+      "solutions_tex_sha256": "1c37fbf8ef4ddbeead188de5a51c184753c09251d516647e59701bd2d3bc7a60"
+    },
+    {
+      "skill": "1.05",
+      "title": "Complex Numbers: Equations with Complex Coefficients",
+      "questions": 14,
+      "solution_sections": 22,
+      "questions_tex_sha256": "c08f55fd1b3e7e160dc60680f63f2d108cf1331b94255ee5a7fe327a51ecf235",
+      "solutions_tex_sha256": "b6c133a27de0eedfb1e6384b4b2361054eb5ce4cec75f37c267f147314631211"
+    },
+    {
+      "skill": "1.06",
+      "title": "Complex Numbers: Modulus-Argument Form",
+      "questions": 54,
+      "solution_sections": 157,
+      "questions_tex_sha256": "eadce546875525a48b7003d1c1c351ec7987f01235708a898fbe4692ea18c4ae",
+      "solutions_tex_sha256": "dfa3b5144ab87f0cbd95e5461ea15433c0d243138ed5bd058e4d60c1a99314e1"
+    },
+    {
+      "skill": "1.07",
+      "title": "Complex Numbers - Loci in the Argand Diagram",
+      "questions": 40,
+      "solution_sections": 128,
+      "questions_tex_sha256": "75a91a8373a2f500323ded80d6d4dc4d2640451e6052f339961173c6b69f93b4",
+      "solutions_tex_sha256": "13948270cfbd31058af887b005c82283e9666c27119d044599027ccd208917a5"
+    },
+    {
+      "skill": "1.08",
+      "title": "Complex Numbers: Loci - Inequalities",
+      "questions": 15,
+      "solution_sections": 45,
+      "questions_tex_sha256": "78533bf1305536b1c15b34b99648c4c5bf1b288ce51ec46e20073c6d0b6bb231",
+      "solutions_tex_sha256": "f5ec48a3a91702237d020a2ff12402a25b47d95307935e1c743a0ed3066ba3bc"
+    },
+    {
+      "skill": "1.09",
+      "title": "Standard Series",
+      "questions": 46,
+      "solution_sections": 113,
+      "questions_tex_sha256": "051fd4bfd063191683457c818f06c42d442dac710095945318a9977e8880a537",
+      "solutions_tex_sha256": "8d734a1ed1e47c85a53739f65a1c879eefe512458c128998952f2630f8549c5d"
+    },
+    {
+      "skill": "1.10",
+      "title": "Series: Method of Differences",
+      "questions": 35,
+      "solution_sections": 67,
+      "questions_tex_sha256": "7ce4f2c5d0918cbc865669b027efa494bc4666edad652bb5f52d65057c962f38",
+      "solutions_tex_sha256": "1b847919ee9d31afc0cf484c4561af6ac13f94ed61c4ef8805b3e25ad7702c76"
+    },
+    {
+      "skill": "1.11",
+      "title": "Maclaurin Series",
+      "questions": 42,
+      "solution_sections": 108,
+      "questions_tex_sha256": "c47bc6ca2647588d5ecd9eab0f1d289d4ebb564a394efecb6825cd9f9b9d1870",
+      "solutions_tex_sha256": "ea3ae0ced3f0c4d70de0d67068f376e28868f70b266e634f067c5ef276d4ff90"
+    },
+    {
+      "skill": "1.12",
+      "title": "Roots of Polynomials",
+      "questions": 72,
+      "solution_sections": 164,
+      "questions_tex_sha256": "4540b30ed074697144f53acf110bde65c6f68200b316e8b581c6ed81caa385d6",
+      "solutions_tex_sha256": "86d7e91bb39e5900d3ef08b2c03f092b6ea0747d5a7c142d9039a06aad0c4cfd"
+    },
+    {
+      "skill": "1.13",
+      "title": "Roots of Polynomials: Using Substitutions",
+      "questions": 8,
+      "solution_sections": 22,
+      "questions_tex_sha256": "3fa40f17b8a9dc643ecb0b35f69ff36625485753be4cf1cb2e44f68b2ffc904e",
+      "solutions_tex_sha256": "563e770d74f08b194ce40952ecbf36cf1524fde88c1da7b5c981cab9401be055"
+    },
+    {
+      "skill": "1.14",
+      "title": "Mean Value",
+      "questions": 21,
+      "solution_sections": 31,
+      "questions_tex_sha256": "fac9bd859009fc02c49392f60424dc09e1b97c7e99a8e14eb2fa480747047d9b",
+      "solutions_tex_sha256": "a27de39edc2f973a369eaa733ad02b4a6f57d9cf02744c4ca748c6b0347a0a54"
+    },
+    {
+      "skill": "1.15",
+      "title": "Volumes of Revolution",
+      "questions": 36,
+      "solution_sections": 78,
+      "questions_tex_sha256": "06350770bfb246ffc5d338222a3c7545a0b66926fe1179cdc578cc37d474d6fb",
+      "solutions_tex_sha256": "04643cf06f85c4c3b6af2efa6526bfe01c141c377810dd4232c5017c54574b65"
+    },
+    {
+      "skill": "1.16",
+      "title": "Inequalities: Polynomials",
+      "questions": 23,
+      "solution_sections": 80,
+      "questions_tex_sha256": "1ae8df5af90fbb1d769e834089203e3e96a04895c0473d477032e0f47e9de3db",
+      "solutions_tex_sha256": "2d3e83008ccf1f0b8a9efcaa95e57d9aae259457f4677f058211c073cee9abc4"
+    },
+    {
+      "skill": "1.17",
+      "title": "Inequalities: Rational Functions",
+      "questions": 22,
+      "solution_sections": 77,
+      "questions_tex_sha256": "73ffa8947aa1e9582fb43a551a09204f8d92498bd281d30b09eb1c678c09bfbc",
+      "solutions_tex_sha256": "0dadd4dcb2d515dcaaaf0ab897ed8824520534d2b63c386de436ba6385b1ca09"
+    },
+    {
+      "skill": "1.18",
+      "title": "Graph Sketching: Linear Rational Functions",
+      "questions": 13,
+      "solution_sections": 63,
+      "questions_tex_sha256": "f7bd739130b2a2a44fae4a6646021b95a54bb4d4e88675348aea0e5e2709c8d3",
+      "solutions_tex_sha256": "b772843cd8a5d5cf212320a6eed5499a46a5602a4615c0208f70c8b2519e47b4"
+    },
+    {
+      "skill": "1.19",
+      "title": "Graph Sketching: Quadratic Rational Functions",
+      "questions": 25,
+      "solution_sections": 85,
+      "questions_tex_sha256": "8d9a89bfd0aa6f5f7b6578d45aabb95610ef2ad3e2a09d7c60965f082d8d4001",
+      "solutions_tex_sha256": "0f48a2ce4ed5362f425abcdea03db3ecee343735f69567d27f1342f759291e9d"
+    },
+    {
+      "skill": "1.20",
+      "title": "Inequalities: Using Graphs",
+      "questions": 11,
+      "solution_sections": 36,
+      "questions_tex_sha256": "95255d8115e1c8996fbb704bce05af9ef65306d0a18299bc69e6374aac946e48",
+      "solutions_tex_sha256": "dda3712b09d88b42445bbea31804c0d0523fe5d1acab2ff79a439e53d60bd7a5"
+    },
+    {
+      "skill": "1.21",
+      "title": "Graph Sketching: Parabolas",
+      "questions": 5,
+      "solution_sections": 15,
+      "questions_tex_sha256": "2984ce0cd2fa22c7e883aa8ad065f2291fa559ac065aac6f87a9535216030eaa",
+      "solutions_tex_sha256": "11b20532089cdbca036d13fe6fa1bd3e3d5c39e72df9e823da2f37a8ab71b14e"
+    },
+    {
+      "skill": "1.22",
+      "title": "Graph Sketching: Ellipses",
+      "questions": 7,
+      "solution_sections": 23,
+      "questions_tex_sha256": "2a234913a3cd8122893fe9a41e04853b00307004579b2f8df430dfc5374323e9",
+      "solutions_tex_sha256": "3d0c4ffa55d61614ef0d8388cd7da97a6bcb98a6b1941c32f9873e0f995dc3da"
+    },
+    {
+      "skill": "1.23",
+      "title": "Graph Sketching: Hyperbola",
+      "questions": 7,
+      "solution_sections": 19,
+      "questions_tex_sha256": "7edf71a87c0ba26deb2295d2c3b521f3a0d48d27aef91c5545c176cdfee8a638",
+      "solutions_tex_sha256": "9893c2ee7bc031b2dfd86b45bb14e968ce04a2602ac0b459b3fa5da79e901233"
+    },
+    {
+      "skill": "1.24",
+      "title": "Graph Sketching: Rectangular Hyperbola",
+      "questions": 6,
+      "solution_sections": 15,
+      "questions_tex_sha256": "e39aaa31a9627993d928bd273b2db7ebc608186a7b84d25ad0706f88cd8a6e7d",
+      "solutions_tex_sha256": "579769e37161e489240deade84ec5e3d9cdfce535cf9b6b5b43581f513310d86"
+    },
+    {
+      "skill": "1.25",
+      "title": "Conics: Transformations",
+      "questions": 23,
+      "solution_sections": 99,
+      "questions_tex_sha256": "6b2743178923849ce143ab9015c50ae3b9145ff02961458977ba7a12e2dd6793",
+      "solutions_tex_sha256": "a188235a145cbde96ea311bd788b58b1f919cc1ba2f40bc1e50ee599e6602ef5"
+    },
+    {
+      "skill": "1.26",
+      "title": "Conics: Problem Solving",
+      "questions": 11,
+      "solution_sections": 22,
+      "questions_tex_sha256": "68b27dad9123254b22d4a4a3593f3158387499ed98e4f24131434ded2255c014",
+      "solutions_tex_sha256": "686bad46b2332d4640c51a868b7ad3f6579cfade5037e26a647bd655fdb77245"
+    },
+    {
+      "skill": "1.27",
+      "title": "Polar Coordinates: Introduction",
+      "questions": 11,
+      "solution_sections": 29,
+      "questions_tex_sha256": "4e36e88e8f875f0bb7f41f07cbffdf3098debe98793ac719c1b867b1f02a5b87",
+      "solutions_tex_sha256": "1d7331e85525c43d57148aafddd1969f5fd5d32310c24a17c31a652951ee3244"
+    },
+    {
+      "skill": "2.01",
+      "title": "Complex Numbers: De Moivre\u2019s Theorem",
+      "questions": 24,
+      "solution_sections": 58,
+      "questions_tex_sha256": "cebd996f91bd1baa1bfba6de0094199330c40f8dd8e05864ea1976944c5ef42c",
+      "solutions_tex_sha256": "801994c3ba716f0dc872e24ce3ae025bcb4d2171b8310a83bc7488094f29e769"
+    },
+    {
+      "skill": "2.02",
+      "title": "Complex Numbers: Exponential Form",
+      "questions": 25,
+      "solution_sections": 82,
+      "questions_tex_sha256": "755ad816089eff9824ecaa56322629705f9a47e38996fa5237bcb0d068a04f14",
+      "solutions_tex_sha256": "c4429899452c5179b7e922b8b5af4747de5bb68bc30abba9b33173a776b63431"
+    },
+    {
+      "skill": "2.03",
+      "title": "Complex Numbers: De Moivre\u2019s Theorem - Multiple Angles",
+      "questions": 23,
+      "solution_sections": 60,
+      "questions_tex_sha256": "dddfe4ecbb2a0cfe3efb1a9f19bc95c38bb8a6185ee1a6da0504b5bb40caa82b",
+      "solutions_tex_sha256": "a3dfccf275791b89e0c56297814384aac5e23979dd766649a3c426e0efcb5ac1"
+    },
+    {
+      "skill": "2.04",
+      "title": "Complex Numbers: De Moivre\u2019s Theorem - Powers",
+      "questions": 33,
+      "solution_sections": 77,
+      "questions_tex_sha256": "d75f6887267486befb685db58d4e58663dbb2243b9090372ec2cf2a1cab37ab8",
+      "solutions_tex_sha256": "303263af7fa6f87307d910f89be330176b21c68ccc888f75d917d158be3a20a4"
+    },
+    {
+      "skill": "2.38",
+      "title": "Integration: Surface Area",
+      "questions": 20,
+      "solution_sections": 35,
+      "questions_tex_sha256": "9dc1ce1cbab996cfbe44f7db5545b6932a6bfbdf3ac582fc6eec81fd96c9275f",
+      "solutions_tex_sha256": "0c0edbaee40460c2f00beefffdb073e9b3cc3213dbfdd217355319df324548df"
+    },
+    {
+      "skill": "2.39",
+      "title": "1st Order DEs: Integrating Factors",
+      "questions": 45,
+      "solution_sections": 100,
+      "questions_tex_sha256": "38af452e4a5397b4c4882ef0f224dcecdf501b176ee8b6a0248b0266403a27a5",
+      "solutions_tex_sha256": "62b3b76c263c3658850b7f78171a14da1a6a236ffae17833709afe9be4a2edd5"
+    },
+    {
+      "skill": "2.40",
+      "title": "1st Order DEs: Sketching Solutions",
+      "questions": 16,
+      "solution_sections": 56,
+      "questions_tex_sha256": "f961c5a201dc015984a6c351fa30bd083c6872f73877057b1492a5df9d6a7bfc",
+      "solutions_tex_sha256": "16f95e16edc2949a09be0113fa6efe38649204fb98caa52dcf65ec83ff088e19"
+    },
+    {
+      "skill": "2.52",
+      "title": "Polar Coordinates: Cartesian Equations \u2013 Part 2",
+      "questions": 11,
+      "solution_sections": 26,
+      "questions_tex_sha256": "e33911e999f583b04213845367c4d1b091a6e79f7d727211e072af99bf9ccb38",
+      "solutions_tex_sha256": "4f773d29cd75a7f0b77e7e36aa0804aace141f99c7ab81da223112f5b31fc0ce"
+    },
+    {
+      "skill": "2.55",
+      "title": "Proof by Induction: General",
+      "questions": 15,
+      "solution_sections": 18,
+      "questions_tex_sha256": "7de2da58caabf1ecb25621a75c4ff018faa20b34fec8d9a1e81cc152ca52dc07",
+      "solutions_tex_sha256": "ed62464134236165e302b0a097b68aa24826199563d4e3edc37b369132d287a3"
+    },
+    {
+      "skill": "2.59",
+      "title": "Reciprocal Functions: Inequalities",
+      "questions": 7,
+      "solution_sections": 16,
+      "questions_tex_sha256": "dbf520ab8b487404eb39fe61980c35c837962207b49c7d95c552d0ee09336dd2",
+      "solutions_tex_sha256": "240b06f5ef35af4de9334031d660303bda811d31635c5e93c21f95d2a2f81ab8"
+    },
+    {
+      "skill": "2.66",
+      "title": "Numerical Methods: Improved Euler's Method",
+      "questions": 14,
+      "solution_sections": 28,
+      "questions_tex_sha256": "01cd975a457acd872bea2d61f1ed666aff5424994c15be86d52dcb47f27eb71b",
+      "solutions_tex_sha256": "ae169cc2282ce1e85e468b44bdcb69db1d182eaeed21c7a1900f8467b7a07580"
+    },
+    {
+      "skill": "2.70",
+      "title": "2D Matrices: Transformations",
+      "questions": 10,
+      "solution_sections": 30,
+      "questions_tex_sha256": "22757636d45ebd6b8ebd08c6b2ad18becefd59634a8c1f1a3be2c2d312accc72",
+      "solutions_tex_sha256": "732952d37be4af353db25e58ffd6266f5ce180eec2911ffe24a0e820778d68a3"
+    },
+    {
+      "skill": "2.74",
+      "title": "3D Matrices: Transformations",
+      "questions": 8,
+      "solution_sections": 24,
+      "questions_tex_sha256": "500c4288ef1828c1d80241b779d4515d8f02e8e88c842584d6f592c324044432",
+      "solutions_tex_sha256": "ada64883df84c6c7e778812ce520d111371e68146f5c1221b6f08d202b628779"
+    }
+  ],
+  "awaiting_conversion": [
+    "1.28",
+    "1.29",
+    "1.30",
+    "1.31",
+    "1.32",
+    "1.33",
+    "1.34",
+    "1.35",
+    "1.36",
+    "1.37",
+    "1.38",
+    "1.39",
+    "1.40",
+    "1.41",
+    "1.42",
+    "1.43",
+    "1.44",
+    "1.45",
+    "1.46",
+    "1.47",
+    "1.48",
+    "1.49",
+    "1.50",
+    "1.51",
+    "1.52",
+    "1.53",
+    "1.54",
+    "1.55",
+    "1.56",
+    "1.57",
+    "1.58",
+    "1.59",
+    "1.60",
+    "1.61",
+    "1.62",
+    "1.63",
+    "2.05",
+    "2.06",
+    "2.07",
+    "2.08",
+    "2.09",
+    "2.10",
+    "2.11",
+    "2.12",
+    "2.13",
+    "2.14",
+    "2.15",
+    "2.16",
+    "2.17",
+    "2.18",
+    "2.19",
+    "2.20",
+    "2.21",
+    "2.22",
+    "2.23",
+    "2.24",
+    "2.25",
+    "2.26",
+    "2.27",
+    "2.28",
+    "2.29",
+    "2.30",
+    "2.31",
+    "2.32",
+    "2.33",
+    "2.34",
+    "2.35",
+    "2.36",
+    "2.37",
+    "2.41",
+    "2.42",
+    "2.43",
+    "2.44",
+    "2.45",
+    "2.46",
+    "2.47",
+    "2.48",
+    "2.49",
+    "2.50",
+    "2.51",
+    "2.53",
+    "2.54",
+    "2.56",
+    "2.57",
+    "2.58",
+    "2.60",
+    "2.61",
+    "2.62",
+    "2.63",
+    "2.64",
+    "2.65",
+    "2.67",
+    "2.68",
+    "2.69",
+    "2.71",
+    "2.72",
+    "2.73"
+  ]
+}
