@@ -2,13 +2,9 @@
 const $=id=>document.getElementById(id),library=window.FMQ_LIBRARY;
 let current=null,history=[],mode='hidden',stage=0,view='split';
 const remembered=new Map(),pools=new Map(),contentCache=new Map();let navigationRevision=0;
-const mathMacros={'\\Real':'\\operatorname{Re}','\\Imag':'\\operatorname{Im}','\\ssum':'\\sum_{r=1}^{#1}#2','\\arraystretch':'1'};
+const mathMacros={'\\cosec':'\\operatorname{cosec}','\\cosech':'\\operatorname{cosech}','\\sech':'\\operatorname{sech}','\\coth':'\\operatorname{coth}','\\arcosech':'\\operatorname{arcosech}','\\arcsech':'\\operatorname{arcsech}','\\arsech':'\\operatorname{arsech}','\\arcoth':'\\operatorname{arcoth}','\\arsinh':'\\operatorname{arsinh}','\\arcosh':'\\operatorname{arcosh}','\\artanh':'\\operatorname{artanh}','\\Real':'\\operatorname{Re}','\\Imag':'\\operatorname{Im}','\\ssum':'\\sum_{r=1}^{#1}#2','\\arraystretch':'1'};
 function renderMath(root){for(const node of root.querySelectorAll('[data-math]'))katex.render(node.dataset.math,node,{displayMode:node.dataset.display==='true',throwOnError:true,strict:'error',macros:{...mathMacros}});}
-async function loadSkill(skill){
- const questions=window.FMQ_CONTENT?.[skill.id];
- if(!questions||questions.length!==skill.questions.length||questions.some(q=>!q.question||!q.steps?.length))throw Error('Incomplete skill '+skill.code);
- skill.questions=questions;contentCache.set(skill.id,questions);
-}
+async function loadSkill(skill){if(contentCache.has(skill.id)){skill.questions=contentCache.get(skill.id);return;}const response=await fetch('content/'+skill.id+'.json');if(!response.ok)throw Error('Unable to load '+skill.code);const questions=await response.json();if(questions.length!==skill.questions.length||questions.some(q=>!q.question||!q.steps?.length))throw Error('Incomplete skill '+skill.code);contentCache.set(skill.id,questions);skill.questions=questions;}
 const key=s=>[s.course,s.book,s.topic,s.skill].join('/');
 function resolve(s={}){
  const course=library.courses.find(x=>x.id===s.course)||library.courses[0];

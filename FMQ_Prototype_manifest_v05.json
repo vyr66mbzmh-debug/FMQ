@@ -1,0 +1,1401 @@
+{
+  "version": "v05",
+  "available_skills": 137,
+  "total_skills": 137,
+  "questions": 3543,
+  "solution_entries": 8641,
+  "additional_worked_solutions": 1,
+  "math_expressions": 65046,
+  "diagram_files": 972,
+  "included": [
+    {
+      "skill": "1.01",
+      "title": "Complex Numbers: Algebra",
+      "questions": 48,
+      "solution_entries": 128,
+      "questions_tex_sha256": "a85310037b554d4e5f238cf19f2f156b89d64467295b3148cc2ade82b8e37163",
+      "solutions_tex_sha256": "5db6057ab685a6628e4cf2c38d186d5fb2f6d3bfa98dc7308f999240849d5bab",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.02",
+      "title": "Complex Numbers: Quadratic Equations",
+      "questions": 12,
+      "solution_entries": 34,
+      "questions_tex_sha256": "e268f05a1f2e9fde15e0a960f4ccfb6e46fdcf70262e7aa3105b1f28ebce4d3a",
+      "solutions_tex_sha256": "679987198abc30f09832b8371fa52433d20a7d0ea19b2c9a7751112b8b80ce13",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.03",
+      "title": "Complex Numbers: Argand Diagrams",
+      "questions": 27,
+      "solution_entries": 77,
+      "questions_tex_sha256": "da7c4b1c5f14fd4d9893141e0fea106679324c9b5667335a70b17ce69e76b01c",
+      "solutions_tex_sha256": "387cf89f6c469eebe3e1f23cc4b32c4e627a8562ef8d89cdac7634de8f498c26",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.04",
+      "title": "Complex Numbers: Roots of Equations",
+      "questions": 53,
+      "solution_entries": 94,
+      "questions_tex_sha256": "88ba03b9249d52c72724f6c977c38d6801f21134b0f76990257ed0816931eb72",
+      "solutions_tex_sha256": "1c37fbf8ef4ddbeead188de5a51c184753c09251d516647e59701bd2d3bc7a60",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.05",
+      "title": "Complex Numbers: Equations with Complex Coefficients",
+      "questions": 14,
+      "solution_entries": 22,
+      "questions_tex_sha256": "c08f55fd1b3e7e160dc60680f63f2d108cf1331b94255ee5a7fe327a51ecf235",
+      "solutions_tex_sha256": "b6c133a27de0eedfb1e6384b4b2361054eb5ce4cec75f37c267f147314631211",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.06",
+      "title": "Complex Numbers: Modulus-Argument Form",
+      "questions": 54,
+      "solution_entries": 157,
+      "questions_tex_sha256": "eadce546875525a48b7003d1c1c351ec7987f01235708a898fbe4692ea18c4ae",
+      "solutions_tex_sha256": "dfa3b5144ab87f0cbd95e5461ea15433c0d243138ed5bd058e4d60c1a99314e1",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.07",
+      "title": "Complex Numbers - Loci in the Argand Diagram",
+      "questions": 40,
+      "solution_entries": 128,
+      "questions_tex_sha256": "75a91a8373a2f500323ded80d6d4dc4d2640451e6052f339961173c6b69f93b4",
+      "solutions_tex_sha256": "13948270cfbd31058af887b005c82283e9666c27119d044599027ccd208917a5",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.08",
+      "title": "Complex Numbers: Loci - Inequalities",
+      "questions": 15,
+      "solution_entries": 45,
+      "questions_tex_sha256": "78533bf1305536b1c15b34b99648c4c5bf1b288ce51ec46e20073c6d0b6bb231",
+      "solutions_tex_sha256": "f5ec48a3a91702237d020a2ff12402a25b47d95307935e1c743a0ed3066ba3bc",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.09",
+      "title": "Standard Series",
+      "questions": 46,
+      "solution_entries": 113,
+      "questions_tex_sha256": "051fd4bfd063191683457c818f06c42d442dac710095945318a9977e8880a537",
+      "solutions_tex_sha256": "8d734a1ed1e47c85a53739f65a1c879eefe512458c128998952f2630f8549c5d",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.10",
+      "title": "Series: Method of Differences",
+      "questions": 35,
+      "solution_entries": 67,
+      "questions_tex_sha256": "7ce4f2c5d0918cbc865669b027efa494bc4666edad652bb5f52d65057c962f38",
+      "solutions_tex_sha256": "1b847919ee9d31afc0cf484c4561af6ac13f94ed61c4ef8805b3e25ad7702c76",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.11",
+      "title": "Maclaurin Series",
+      "questions": 42,
+      "solution_entries": 108,
+      "questions_tex_sha256": "c47bc6ca2647588d5ecd9eab0f1d289d4ebb564a394efecb6825cd9f9b9d1870",
+      "solutions_tex_sha256": "ea3ae0ced3f0c4d70de0d67068f376e28868f70b266e634f067c5ef276d4ff90",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.12",
+      "title": "Roots of Polynomials",
+      "questions": 72,
+      "solution_entries": 164,
+      "questions_tex_sha256": "4540b30ed074697144f53acf110bde65c6f68200b316e8b581c6ed81caa385d6",
+      "solutions_tex_sha256": "86d7e91bb39e5900d3ef08b2c03f092b6ea0747d5a7c142d9039a06aad0c4cfd",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.13",
+      "title": "Roots of Polynomials: Using Substitutions",
+      "questions": 8,
+      "solution_entries": 22,
+      "questions_tex_sha256": "3fa40f17b8a9dc643ecb0b35f69ff36625485753be4cf1cb2e44f68b2ffc904e",
+      "solutions_tex_sha256": "563e770d74f08b194ce40952ecbf36cf1524fde88c1da7b5c981cab9401be055",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.14",
+      "title": "Mean Value",
+      "questions": 21,
+      "solution_entries": 31,
+      "questions_tex_sha256": "fac9bd859009fc02c49392f60424dc09e1b97c7e99a8e14eb2fa480747047d9b",
+      "solutions_tex_sha256": "a27de39edc2f973a369eaa733ad02b4a6f57d9cf02744c4ca748c6b0347a0a54",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.15",
+      "title": "Volumes of Revolution",
+      "questions": 36,
+      "solution_entries": 78,
+      "questions_tex_sha256": "06350770bfb246ffc5d338222a3c7545a0b66926fe1179cdc578cc37d474d6fb",
+      "solutions_tex_sha256": "04643cf06f85c4c3b6af2efa6526bfe01c141c377810dd4232c5017c54574b65",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.16",
+      "title": "Inequalities: Polynomials",
+      "questions": 23,
+      "solution_entries": 80,
+      "questions_tex_sha256": "1ae8df5af90fbb1d769e834089203e3e96a04895c0473d477032e0f47e9de3db",
+      "solutions_tex_sha256": "2d3e83008ccf1f0b8a9efcaa95e57d9aae259457f4677f058211c073cee9abc4",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.17",
+      "title": "Inequalities: Rational Functions",
+      "questions": 22,
+      "solution_entries": 77,
+      "questions_tex_sha256": "73ffa8947aa1e9582fb43a551a09204f8d92498bd281d30b09eb1c678c09bfbc",
+      "solutions_tex_sha256": "0dadd4dcb2d515dcaaaf0ab897ed8824520534d2b63c386de436ba6385b1ca09",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.18",
+      "title": "Graph Sketching: Linear Rational Functions",
+      "questions": 13,
+      "solution_entries": 63,
+      "questions_tex_sha256": "f7bd739130b2a2a44fae4a6646021b95a54bb4d4e88675348aea0e5e2709c8d3",
+      "solutions_tex_sha256": "b772843cd8a5d5cf212320a6eed5499a46a5602a4615c0208f70c8b2519e47b4",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.19",
+      "title": "Graph Sketching: Quadratic Rational Functions",
+      "questions": 25,
+      "solution_entries": 85,
+      "questions_tex_sha256": "8d9a89bfd0aa6f5f7b6578d45aabb95610ef2ad3e2a09d7c60965f082d8d4001",
+      "solutions_tex_sha256": "0f48a2ce4ed5362f425abcdea03db3ecee343735f69567d27f1342f759291e9d",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.20",
+      "title": "Inequalities: Using Graphs",
+      "questions": 11,
+      "solution_entries": 36,
+      "questions_tex_sha256": "95255d8115e1c8996fbb704bce05af9ef65306d0a18299bc69e6374aac946e48",
+      "solutions_tex_sha256": "dda3712b09d88b42445bbea31804c0d0523fe5d1acab2ff79a439e53d60bd7a5",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.21",
+      "title": "Graph Sketching: Parabolas",
+      "questions": 5,
+      "solution_entries": 15,
+      "questions_tex_sha256": "2984ce0cd2fa22c7e883aa8ad065f2291fa559ac065aac6f87a9535216030eaa",
+      "solutions_tex_sha256": "11b20532089cdbca036d13fe6fa1bd3e3d5c39e72df9e823da2f37a8ab71b14e",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.22",
+      "title": "Graph Sketching: Ellipses",
+      "questions": 7,
+      "solution_entries": 23,
+      "questions_tex_sha256": "2a234913a3cd8122893fe9a41e04853b00307004579b2f8df430dfc5374323e9",
+      "solutions_tex_sha256": "3d0c4ffa55d61614ef0d8388cd7da97a6bcb98a6b1941c32f9873e0f995dc3da",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.23",
+      "title": "Graph Sketching: Hyperbola",
+      "questions": 7,
+      "solution_entries": 19,
+      "questions_tex_sha256": "7edf71a87c0ba26deb2295d2c3b521f3a0d48d27aef91c5545c176cdfee8a638",
+      "solutions_tex_sha256": "9893c2ee7bc031b2dfd86b45bb14e968ce04a2602ac0b459b3fa5da79e901233",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.24",
+      "title": "Graph Sketching: Rectangular Hyperbola",
+      "questions": 6,
+      "solution_entries": 15,
+      "questions_tex_sha256": "e39aaa31a9627993d928bd273b2db7ebc608186a7b84d25ad0706f88cd8a6e7d",
+      "solutions_tex_sha256": "579769e37161e489240deade84ec5e3d9cdfce535cf9b6b5b43581f513310d86",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.25",
+      "title": "Conics: Transformations",
+      "questions": 23,
+      "solution_entries": 99,
+      "questions_tex_sha256": "6b2743178923849ce143ab9015c50ae3b9145ff02961458977ba7a12e2dd6793",
+      "solutions_tex_sha256": "a188235a145cbde96ea311bd788b58b1f919cc1ba2f40bc1e50ee599e6602ef5",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.26",
+      "title": "Conics: Problem Solving",
+      "questions": 11,
+      "solution_entries": 22,
+      "questions_tex_sha256": "68b27dad9123254b22d4a4a3593f3158387499ed98e4f24131434ded2255c014",
+      "solutions_tex_sha256": "686bad46b2332d4640c51a868b7ad3f6579cfade5037e26a647bd655fdb77245",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.27",
+      "title": "Polar Coordinates: Introduction",
+      "questions": 11,
+      "solution_entries": 29,
+      "questions_tex_sha256": "4e36e88e8f875f0bb7f41f07cbffdf3098debe98793ac719c1b867b1f02a5b87",
+      "solutions_tex_sha256": "1d7331e85525c43d57148aafddd1969f5fd5d32310c24a17c31a652951ee3244",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.28",
+      "title": "Graph Sketching: Polar Curves",
+      "questions": 36,
+      "solution_entries": 142,
+      "questions_tex_sha256": "9be1fc69d23fbbd529abcc88eac2aef0ced98e73202d321ebbc82251d697602b",
+      "solutions_tex_sha256": "b5952dbc5a86dda151dc2190e236ef5dc6958b39f21de493f09d3558a00e8e10",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.29",
+      "title": "Polar Coordinates: Cartesian Equations",
+      "questions": 26,
+      "solution_entries": 75,
+      "questions_tex_sha256": "9b1e2ebcc0540e28227b55df455bd7b7333c89c600cdb997dda2f49f69fde305",
+      "solutions_tex_sha256": "00f5e3be1f914210da8dd0b914f9a798c805b9c61241815513bfe2e14fb1265d",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.30",
+      "title": "Hyperbolic Functions",
+      "questions": 70,
+      "solution_entries": 141,
+      "questions_tex_sha256": "3e6eed0bccc2d775aa8dfeea06b7cbb08fb09315fc5825ada3cd991b3d7cd15b",
+      "solutions_tex_sha256": "89b01684df00db633373b9f24002faaf8a6f850edee2ce9b4f0af2c9a92df48e",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.31",
+      "title": "Graph Sketching: Hyperbolic Functions",
+      "questions": 12,
+      "solution_entries": 38,
+      "questions_tex_sha256": "40b4da9d2e6abad56f12359c32157c92b36fb3c873d79b058849d7c8bc347086",
+      "solutions_tex_sha256": "48942e7a49e39eeea3793df8b2978313e3456347c8782b38b8f3967b2987ddbe",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.32",
+      "title": "Inverse Hyperbolic Functions",
+      "questions": 17,
+      "solution_entries": 46,
+      "questions_tex_sha256": "6a8f5811deee86da5b975617fdb88d87a57d9ded4ba0390ecf184549a0af58f0",
+      "solutions_tex_sha256": "808379d63efedca1c012bd83d2716618dcd5e7da9d85e59eefa36a6531f2fa21",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.33",
+      "title": "Graph Sketching: Inverse Hyperbolic Functions",
+      "questions": 12,
+      "solution_entries": 38,
+      "questions_tex_sha256": "f7321a46b7830eb3f7908df9ce822834fba8ae5c3bad7eae53f34075d6a28764",
+      "solutions_tex_sha256": "ababa6cd62ec5e77bf048488424f60815dd4993a1f9809598e1559efaeaa294f",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.34",
+      "title": "Matrices: Introduction",
+      "questions": 79,
+      "solution_entries": 154,
+      "questions_tex_sha256": "f1333c9188d2283e6035d274d22d318ab3f18fc774aaacbc9f44f2b0ca1a1307",
+      "solutions_tex_sha256": "9520a0b009aa459c589df3d954988610f6d2c5e42595cec1d36a422e72ef95ea",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.35",
+      "title": "2D Matrices as Linear Transformations",
+      "questions": 22,
+      "solution_entries": 36,
+      "questions_tex_sha256": "8f88502d897c13b98fe92e4a4e78088e0b980a2bde6cf47f0b2d35bc01300862",
+      "solutions_tex_sha256": "5f06394b304aee3ad5b478460c8b9237af774464067b13680cd91740d6c55104",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.36",
+      "title": "2D Matrices: Stretches and Enlargements",
+      "questions": 13,
+      "solution_entries": 33,
+      "questions_tex_sha256": "55a9479c0d94b61d2a3b64ad604899d439181e323d67428edf2784998fe138e9",
+      "solutions_tex_sha256": "0683e2d6b48445cc447631af438132805f967de24d48b9033b25f66fd39a1f3a",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.37",
+      "title": "2D Matrices: Rotations",
+      "questions": 27,
+      "solution_entries": 49,
+      "questions_tex_sha256": "9288d16d64fcc554073da384d5a08e2fdad9b0a373ca5dfa3c22489b03fc58e2",
+      "solutions_tex_sha256": "dbd9c5f27bc53a8dee71c4bbeafe3af597d3d456bfe9cad99d397372f6286397",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.38",
+      "title": "2D Matrices: Reflections",
+      "questions": 14,
+      "solution_entries": 37,
+      "questions_tex_sha256": "a247d26ef820337a8b8a2bac1e0808c38a6fe32ff88c93cbd9257155fc0383ce",
+      "solutions_tex_sha256": "fe3f570c9c7aa51c8b67b700838aebccb4f60f101ef410d958de1b97c07106f3",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.39",
+      "title": "2D Matrices: Shears",
+      "questions": 13,
+      "solution_entries": 20,
+      "questions_tex_sha256": "503bf50917a1896d9cfbbddadb6f48600d295e6b3667c8929224ccd648631826",
+      "solutions_tex_sha256": "825165321a122a1ac79db2da2f51e7f9879493399e90bb20129ecf1cf3468773",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.40",
+      "title": "2D Matrices: Combining Transformations",
+      "questions": 45,
+      "solution_entries": 97,
+      "questions_tex_sha256": "3622f425dd3e1c7df21a7a67fcc82079fa41e707b0e9491249b89aed225982d2",
+      "solutions_tex_sha256": "015132e839c49d67536246e141d425c672e77f2c6ed62b7e3d8e81d071e24f0d",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.41",
+      "title": "3D Matrices as Linear Transformations",
+      "questions": 50,
+      "solution_entries": 101,
+      "questions_tex_sha256": "345a5f5cf7c546c14c2d246f33d1ea4967f51f09003cd000df641b7ca84aee07",
+      "solutions_tex_sha256": "994dfee14c5d54fadcd8354692f77e6c863e9ad8b0e51df71d72a934cba4c6b7",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.42",
+      "title": "Matrices: Invariant Points and Lines",
+      "questions": 37,
+      "solution_entries": 78,
+      "questions_tex_sha256": "308bc08777e5a779b7025fc56069442857655927986b24aa17c05a223e828380",
+      "solutions_tex_sha256": "cc6d4bda54f878af3e3461e551d6e54d6a45a8e845f8482a16aa8626460d2cff",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.43",
+      "title": "Matrices: Determinants",
+      "questions": 80,
+      "solution_entries": 190,
+      "questions_tex_sha256": "daff4f75ab2d7ac4fc0254e26d89158deaac0fb4ac95ac0abd60a9e1734ad54e",
+      "solutions_tex_sha256": "3bb2ff6b20971d0e22e6fcb1a666509d0c1d3b2bf36aad42e2f67bbc282aae68",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.44",
+      "title": "Matrices: Inverses & Applications",
+      "questions": 64,
+      "solution_entries": 136,
+      "questions_tex_sha256": "eb260409fd4cd477498654f7eda3baac8412aa5fb031e7a6dbe5526f2ecfaea1",
+      "solutions_tex_sha256": "2a3881e9a90398a1462eeb7401c7b42a355e224b4741ee4df6bfa2b8c1447e44",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.45",
+      "title": "Matrices: Modelling",
+      "questions": 16,
+      "solution_entries": 35,
+      "questions_tex_sha256": "2f663855a59f85aa6c2acbb8e2b0630c108384087c734d0eb4f9bdca54162115",
+      "solutions_tex_sha256": "93370881b7e21609db49b19ebcb9cc953ee789430a31141acbb2ddea6eaf75b9",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.46",
+      "title": "Proof by Induction: Matrices",
+      "questions": 15,
+      "solution_entries": 24,
+      "questions_tex_sha256": "2c217b37b3bd2e18ce43795e122ed9ccfb30e17334b72c7c67317ba93bcea167",
+      "solutions_tex_sha256": "09ca79080db42cbbbc9ccb57689f9b8395622e46104da7a0528e786ed2baee3b",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.47",
+      "title": "Proof by Induction: Divisibility",
+      "questions": 17,
+      "solution_entries": 31,
+      "questions_tex_sha256": "8a290d9aa2099b3483bf213ca8e1d66ee21e9adc8d6f05b2be9e02070775dcdb",
+      "solutions_tex_sha256": "af3da1231ecf3ff2064bc57d34bcf2343ccfc940f8af8e1067c78a2284d18e6c",
+      "source_discrepancies": [
+        "Q7 states n\u22650, while the source worked solution checks n=1 and concludes only for n\u22651.",
+        "Worked solution 4 gives the false base equality 1+1=1\u00b2; preserved as printed.",
+        "Worked solution 5(b) assumes k\u00b3+3k\u00b2+2k is divisible by 6, but its following justification says k\u00b3\u2212k is divisible by 6; preserved as printed.",
+        "Worked solution 11 starts at n=2 but its final sentence says n=1 and concludes for n\u22651; preserved as printed.",
+        "Worked solution 17(c) says the negative case applies for n\u22641; preserved as printed."
+      ]
+    },
+    {
+      "skill": "1.48",
+      "title": "Proof by Induction: Sum of Series",
+      "questions": 15,
+      "solution_entries": 23,
+      "questions_tex_sha256": "ee3de3a5233f7efdc7d766f0be21f00da919a5b25e61187bf2483959cd50fb0b",
+      "solutions_tex_sha256": "ecc15861293ce2079b8cf402236d165edbab1578cf3713e884d3241d21b97661",
+      "source_discrepancies": [
+        "Worked solution 3(c) changes 1/4 to 1/6 in the final algebra line; preserved as printed.",
+        "Worked solution 5 has an incorrect factor 1/3 in one factorisation, then returns to 1/6 on the next line; both source lines preserved.",
+        "Worked solution 14 writes the k-partial sum, rather than the (k+1)-partial sum, on the left side of its induction step; preserved.",
+        "Worked solution 15 repeats the (k+1)-sum on the right side and adds (k+1)^r; preserved.",
+        "Question 15 states a is any real number although its formula is undefined at a=1; source wording preserved."
+      ]
+    },
+    {
+      "skill": "1.49",
+      "title": "Proof by Induction: Sequences",
+      "questions": 13,
+      "solution_entries": 21,
+      "questions_tex_sha256": "901b87029c2e023809289f280d50f1ebcc63ec792c83b25dae2ebe93e47ae92f",
+      "solutions_tex_sha256": "9fa083da7d1936f5e5c23b45880a5e4e12b7bd977d4d63ee93461c3e561a5816",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.50",
+      "title": "Proof by Induction: Inequalities and Non-standard Proofs",
+      "questions": 19,
+      "solution_entries": 26,
+      "questions_tex_sha256": "13fe466add5372fe7e9cd28a4fee24c84426445a429613f29da6be71da4ad67a",
+      "solutions_tex_sha256": "912b131b249fb49d5f1e06d428c36d26b97bfc3c80607bcd117154e0fd8f3483",
+      "source_discrepancies": [
+        "Worked solution 7(b) labels its n=2 check as true for n=1; preserved.",
+        "Worked solution 13 concludes for n\u22651 even though the prompt starts at n\u22652; preserved.",
+        "Question 18 uses factorials of a real-valued power while stating only n\u2264a; source wording preserved."
+      ]
+    },
+    {
+      "skill": "1.51",
+      "title": "2D Vectors",
+      "questions": 44,
+      "solution_entries": 87,
+      "questions_tex_sha256": "9a4a451aedbc4e46308f34dfe1a18778818c98551c2f0f8202d10cb4f44fd79d",
+      "solutions_tex_sha256": "0b352a95168665f1903a7f9072369757e9e4b4cdc70e502738317db19c67fbca",
+      "source_discrepancies": [
+        "Worked solution 29(a) reports 3.37\u00b0 as (1 DP) rather than rounding it; preserved.",
+        "Worked solution 38's non-vector method equates a distance to 6664, while the prompt and later methods use 14\u221a34; preserved as printed."
+      ]
+    },
+    {
+      "skill": "1.52",
+      "title": "3D Vectors: The Scalar Product",
+      "questions": 29,
+      "solution_entries": 57,
+      "questions_tex_sha256": "d6780dc9ada3100290a71958d8a2ebe6eab162ff3ab4066ff0ac0649544806ae",
+      "solutions_tex_sha256": "dbd7070b0fe7ae77650092d2d862b58c807b554657235861631f1b479e125fde",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.53",
+      "title": "3D Vectors: The Vector Product",
+      "questions": 49,
+      "solution_entries": 99,
+      "questions_tex_sha256": "ee3394c89aa39df795326ec5bdcc46f5c33c5847ab72d5fd7445565166f5bd3a",
+      "solutions_tex_sha256": "75336e56b6f1c38964f86f57de78d036388e7b6b3e5e34c17da53bc1141a7173",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.54",
+      "title": "Equations of Lines in 3D: Vector Equations",
+      "questions": 59,
+      "solution_entries": 112,
+      "questions_tex_sha256": "1ad853e2256ea5cac718483ae5e36bbf65bad2a8217ffcb70bba636dc018b55b",
+      "solutions_tex_sha256": "4ca172155f42ebd0efeaa0d9ce122ec56e5331b65fc63d83c7fd1eb277f9e7c7",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.55",
+      "title": "Equations of Lines in 3D: Cartesian Equations",
+      "questions": 20,
+      "solution_entries": 62,
+      "questions_tex_sha256": "3e25ab4595c7c05aa5eebb3f97faaf8ba91e07330e2b939cbdacb3d60fb3c9a1",
+      "solutions_tex_sha256": "f22ba3c22628902672757dc7fa1946cfe98c8222e0ef30b246c77fc1d155b3e4",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.56",
+      "title": "Equations of Lines in 3D: Vector Product Equations",
+      "questions": 10,
+      "solution_entries": 19,
+      "questions_tex_sha256": "62b07dc1789399ad761453a7990a3da4be305311f591a06d8095aab8e85ba2f4",
+      "solutions_tex_sha256": "00ce35192719f7b696d7b9caa2885a2187cf35e036d6bf630f540a3045b5c8bf",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.57",
+      "title": "Equations of Planes: Cartesian Equations",
+      "questions": 36,
+      "solution_entries": 73,
+      "questions_tex_sha256": "e0a3a4f13da6911dc240d5bd02d463fcde9bafbad600e361474b2fdba375cc20",
+      "solutions_tex_sha256": "701d0044711399b9c67d4073fe1fa902c3e29c3da96dd9e6d80074beae0437f6",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.58",
+      "title": "Equations of Planes: Scalar Product Equations",
+      "questions": 11,
+      "solution_entries": 21,
+      "questions_tex_sha256": "68f406d3d352c4ba588ba145d432205938b979bad05897fd06384b982bb0d5f8",
+      "solutions_tex_sha256": "3ff9905ded457f9858693849060f4f8b638f1947fa7ddb5632d8f506bd2e14c8",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.59",
+      "title": "Equations of Planes: Vector Equations",
+      "questions": 12,
+      "solution_entries": 25,
+      "questions_tex_sha256": "fade745d1b5b3f77eaab844b4554702296d28c6d9b2627a2bbb3b4d9d9ad65d6",
+      "solutions_tex_sha256": "085d8bf86939b2937831613ba24cc5be25170507d088292653dcf4d04ca077fd",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.60",
+      "title": "Geometrical Configuration of Planes",
+      "questions": 28,
+      "solution_entries": 50,
+      "questions_tex_sha256": "085feedb85cb6f35168eba9f6e0f96a1aec518a85dbf0b820f3ab85725ce062d",
+      "solutions_tex_sha256": "e9fab67397dbbfebe054b52f504f2a359844417946fb102de0727fa5d121ad91",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.61",
+      "title": "Lines and Planes",
+      "questions": 25,
+      "solution_entries": 54,
+      "questions_tex_sha256": "e8656f9320163875024d3aef17fc26c4ff0aa501b88768a7b86d3ebf69483cf0",
+      "solutions_tex_sha256": "2f2d7438d10d17973ba9b26f78edf85bdb422e7434c2e43c14f292d7870b886e",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.62",
+      "title": "Shortest Distances in 3D: Points and Lines",
+      "questions": 33,
+      "solution_entries": 45,
+      "questions_tex_sha256": "37e54c1b97d01568efb50c1fb92fe0bb04e0e4d18b6db1f4f147eb76d2789e32",
+      "solutions_tex_sha256": "4aa8f709a5499facf1effe9a69bb1dfcf6851156b4e18af5594b180178e026dd",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "1.63",
+      "title": "Shortest Distances in 3D: Planes",
+      "questions": 21,
+      "solution_entries": 37,
+      "questions_tex_sha256": "3869d5be46fbeba5338fc959d5bd1c53c99c9cb9e242ada1d75fcae2032e2498",
+      "solutions_tex_sha256": "9cf62621ffffefc45a5fe716ecbb6a76b224fa9f731685c8c908e2281edcc12e",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.01",
+      "title": "Complex Numbers: De Moivre\u2019s Theorem",
+      "questions": 24,
+      "solution_entries": 58,
+      "questions_tex_sha256": "cebd996f91bd1baa1bfba6de0094199330c40f8dd8e05864ea1976944c5ef42c",
+      "solutions_tex_sha256": "801994c3ba716f0dc872e24ce3ae025bcb4d2171b8310a83bc7488094f29e769",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.02",
+      "title": "Complex Numbers: Exponential Form",
+      "questions": 25,
+      "solution_entries": 82,
+      "questions_tex_sha256": "755ad816089eff9824ecaa56322629705f9a47e38996fa5237bcb0d068a04f14",
+      "solutions_tex_sha256": "c4429899452c5179b7e922b8b5af4747de5bb68bc30abba9b33173a776b63431",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.03",
+      "title": "Complex Numbers: De Moivre\u2019s Theorem - Multiple Angles",
+      "questions": 23,
+      "solution_entries": 60,
+      "questions_tex_sha256": "dddfe4ecbb2a0cfe3efb1a9f19bc95c38bb8a6185ee1a6da0504b5bb40caa82b",
+      "solutions_tex_sha256": "a3dfccf275791b89e0c56297814384aac5e23979dd766649a3c426e0efcb5ac1",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.04",
+      "title": "Complex Numbers: De Moivre\u2019s Theorem - Powers",
+      "questions": 33,
+      "solution_entries": 77,
+      "questions_tex_sha256": "d75f6887267486befb685db58d4e58663dbb2243b9090372ec2cf2a1cab37ab8",
+      "solutions_tex_sha256": "303263af7fa6f87307d910f89be330176b21c68ccc888f75d917d158be3a20a4",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.05",
+      "title": "Complex Numbers: Roots of Unity",
+      "questions": 30,
+      "solution_entries": 76,
+      "questions_tex_sha256": "01b62b7cc2dd417609c8c4e9f390f6b347ca9bbe903192f75f812d2dae7a7706",
+      "solutions_tex_sha256": "5fb91e6ad1b911ad856c043b8df0f1ecd66cb6183968a29a12cb8744b2b4b0d2",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.06",
+      "title": "Complex Numbers: The nth Roots of a Complex Number",
+      "questions": 25,
+      "solution_entries": 58,
+      "questions_tex_sha256": "3baa3b55629ad532e2c5fbce72821d9834c9211cab337c40233a6bad40e48efa",
+      "solutions_tex_sha256": "5dc59021a53f1398ca8e100e524f1db9bda29fe88d1f56491a5eb35decfe3350",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.07",
+      "title": "Complex Numbers: The Geometry of nth Roots",
+      "questions": 36,
+      "solution_entries": 90,
+      "questions_tex_sha256": "e1d843db31453f0669846adbdc35591fa7711da076c230819fa6dea2be9cc5c1",
+      "solutions_tex_sha256": "7238064395ee8db2cae5b0db0cd09deac3b7ac451edc95e5c01e9d4d8685d094",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.08",
+      "title": "Complex Numbers: C + iS",
+      "questions": 43,
+      "solution_entries": 124,
+      "questions_tex_sha256": "64ec52e0df1b700eb2b72385bf8d1be3ae1230b88edd8b0b0252c293bfa97475",
+      "solutions_tex_sha256": "2ff1a3531e06bda67933f6075479bfb56409247e7aa5aee3ace5c9d112689c59",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.09",
+      "title": "Limits",
+      "questions": 11,
+      "solution_entries": 25,
+      "questions_tex_sha256": "d66ba570d8f830a7d2306349565327c7feafa1a3a5382a047132e95b2cbcf2d7",
+      "solutions_tex_sha256": "231f4ea660de88a5061cc091e09055e0507741ac43b6cb139bb2dbc4f6ddf9fe",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.10",
+      "title": "L\u2019H\u00f4pital\u2019s Rule",
+      "questions": 18,
+      "solution_entries": 52,
+      "questions_tex_sha256": "29b3a39d7946ea04f687b192d531b1d48f6c50ad1b2d41355eba8313a516d811",
+      "solutions_tex_sha256": "84877743e6343a40cf5b744ddcaa18d18c10011640c7b42601813fc4497b693f",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.11",
+      "title": "Series: Method of Differences \u2013 Part 2",
+      "questions": 18,
+      "solution_entries": 33,
+      "questions_tex_sha256": "68c5b7c6c76cb3df8a0e8bcd96e994f624c652755e9495ef897fc54a1e70585e",
+      "solutions_tex_sha256": "3ef9409b2f78fa7ddd69626cb28216d48f887c4da93d21714f7aa90d37a9fd20",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.12",
+      "title": "Maclaurin Series - Part 2",
+      "questions": 46,
+      "solution_entries": 119,
+      "questions_tex_sha256": "b4892a020fa53d07559a60a602d032d45ab3e186a7c5b4e57edd0e7c27ab4cdc",
+      "solutions_tex_sha256": "3e7ce18f923251b93b768898c8943984ede7bf2fa34eb6618f0d39e3a21108e1",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.13",
+      "title": "Maclaurin Series: Limits",
+      "questions": 27,
+      "solution_entries": 69,
+      "questions_tex_sha256": "d90041dc10b85e7e7aeb6e7d36785adfd23de096b471b2666f67deba4efc9ffe",
+      "solutions_tex_sha256": "1b3d472837f0eb90e05d1cef63c76ea2cfa0c258ddc3d2e048649bbe3f3f5417",
+      "source_discrepancies": [
+        "Solution 2(c) prints the coefficient of x^3 in sin(4x) as -32/2; this is retained. The standard expansion gives -32/3, while the printed subsequent limit still evaluates to 4.",
+        "Solution 4(c) expands the square root as x - 4 - 13/(2x) + ..., then uses 4 + 23/(2x) + ... in the final limit line. Both printed expressions are retained; the limit is 4.",
+        "Solution 21(a) evaluates the fifth derivative by printing f^(3)(0)=0 and the sixth by printing f^(4)(0)=1. The printed derivative labels are retained; its final series uses the usual coefficients.",
+        "Solution 14(b) repeats the words \u201cSo that\u201d in the alternative method; retained."
+      ]
+    },
+    {
+      "skill": "2.14",
+      "title": "Hyperbolic Functions: Osborn\u2019s Rule & Proof",
+      "questions": 57,
+      "solution_entries": 173,
+      "questions_tex_sha256": "125f094001d230ee536c61cd9d2de49b4fafae48debeecb04436ca5eec5a20c0",
+      "solutions_tex_sha256": "9161f35e027fb1c239a1c64a63f20694264ab26430fab837aa2540ac0513797f",
+      "source_discrepancies": [
+        "Question 23(b) asks for tanh(1+\u221a6), but the worked-solutions source instead derives tanh(1+ln 6); both source forms have been retained in their respective documents.",
+        "The worked-solutions source for 28(b) prints cos 4 in the identity calculation, while the question states cosh 4; the solution source wording is retained."
+      ]
+    },
+    {
+      "skill": "2.15",
+      "title": "Hyperbolic Functions: Domain and Range",
+      "questions": 10,
+      "solution_entries": 27,
+      "questions_tex_sha256": "ea73657e1432a46aae79b8797c7231f96ac0bd28fa074fc3a3b070029ac0427d",
+      "solutions_tex_sha256": "ae5bf5a7c4a6350cd0918ea84bb44e6f0b4a651b5d49edfc23e0b519c3c4e3da",
+      "source_discrepancies": [
+        "Question 9 gives x in [a,b] but the worked solution reports an open lower range endpoint; the source result was preserved."
+      ]
+    },
+    {
+      "skill": "2.16",
+      "title": "Hyperbolic Functions: Inverse Functions",
+      "questions": 33,
+      "solution_entries": 56,
+      "questions_tex_sha256": "ae9bf8db6088054e28e8a51290d5f7cb2ca7e75cae85aa47e93d267890135ec7",
+      "solutions_tex_sha256": "df07a1b1afc5b9db93f7c43048819e08d7c1679e43b7ed789c84c1583f74c197",
+      "source_discrepancies": [
+        "Worked-solutions alternatives for Questions 11(a), 11(b), and 11(c) print tan(artanh \u2026) (including tan(artanh 5x)) while the surrounding derivation and equations use the hyperbolic tangent identity; the printed wording is retained.",
+        "The worked-solutions graph for Question 1(c) labels both vertical asymptotes x = -1; the original graph is retained as printed."
+      ]
+    },
+    {
+      "skill": "2.17",
+      "title": "Hyperbolic Functions: Reciprocal Functions",
+      "questions": 28,
+      "solution_entries": 68,
+      "questions_tex_sha256": "7c2f7fb087709ef9072e97c03d19fb7306ed431ad03fef8a8699863e8a437fa3",
+      "solutions_tex_sha256": "39e93319ced616340607ed6da77fe5114c283c9ce4050f77a2dfc3bc57ee1ba6",
+      "source_discrepancies": [
+        "Worked-solutions Question 17(b) proceeds from sech^2 x = 1/16 to sech x = \u00b11/4, then gives x = ln(-4 + \u221a15) for the negative branch. This logarithm is not real and sech x cannot be negative; the printed solution is retained.",
+        "Worked-solutions Question 6 states cosech(ln k)=2k/(k\u00b2\u22121) for positive k without restating that k=1 is excluded because the left side is undefined there; the statement is retained as printed."
+      ]
+    },
+    {
+      "skill": "2.18",
+      "title": "Graph Sketching: Reciprocal Hyperbolic Functions",
+      "questions": 8,
+      "solution_entries": 22,
+      "questions_tex_sha256": "e37a6edd21a6b2d0fb9e14981ea9a056abd1dcdf11d177f64d4a2da32a925623",
+      "solutions_tex_sha256": "854e508b3fe07e5904b17392c37975d96a1279cb2835ba08995b5262e4433c7d",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.19",
+      "title": "Hyperbolic Functions: Differentiation",
+      "questions": 49,
+      "solution_entries": 79,
+      "questions_tex_sha256": "1a6b58c24d55aa731e971a2d9a9cf82405341a9853112a62a447865e3140edc3",
+      "solutions_tex_sha256": "1b76e9411e9d234e4dfb55825384300755484733dcca86f8768fb36e0ff6168f",
+      "source_discrepancies": [
+        "Worked-solutions Question 23 states that the minimum p for more than one stationary point is p=2. At p=2, the two additional roots coincide at x=0, leaving one distinct stationary point; more than one distinct stationary point occurs for p>2. The source claim is retained."
+      ]
+    },
+    {
+      "skill": "2.20",
+      "title": "Hyperbolic Functions: Integration",
+      "questions": 25,
+      "solution_entries": 44,
+      "questions_tex_sha256": "709f9c689e665077d88db0a329ab07e978662250997612f5e0a8cfdee3f7dee6",
+      "solutions_tex_sha256": "e9505593b885faf0ef911d689f93c92ef4c8ac62f3e2225e01f4b7597f042fac",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.21",
+      "title": "Hyperbolic Functions: Modelling",
+      "questions": 8,
+      "solution_entries": 24,
+      "questions_tex_sha256": "1ea5c9e5712df7230e88b6dc628503f394eae8c38bf1b38415811bd89868bb0a",
+      "solutions_tex_sha256": "b74e1571a6767e6b59a7d9a4c9f515b94d9d4eb567f36fba6b2ad8fc03cdb41b",
+      "source_discrepancies": [
+        "Question 5(e) and its worked solution state that |dI/dx| decreases for all x\u22650, but the stated model I=120 sech(kx) gives |dI/dx| proportional to tanh(kx)sech(kx), which initially increases from 0 before later decreasing. The source claim and its working are retained unchanged in the transcription."
+      ]
+    },
+    {
+      "skill": "2.22",
+      "title": "Hyperbolic Functions: Mix",
+      "questions": 13,
+      "solution_entries": 24,
+      "questions_tex_sha256": "35b62d34876a8427027637c7f099d8bef769e36a343ec62548ae14fcfd2ddb15",
+      "solutions_tex_sha256": "f67c8fb405e318a666954786d0dde8a746d0f6c829d9efd8e0cdc4a0b148150a",
+      "source_discrepancies": [
+        "Worked-solution Q7(b) gives z=\u00b1i ln(4+\u221a15) (and an equivalent sign form) without the 2\u03c0n periodic family of solutions to cos z=4. The printed answer is retained."
+      ]
+    },
+    {
+      "skill": "2.23",
+      "title": "Partial Fractions",
+      "questions": 10,
+      "solution_entries": 20,
+      "questions_tex_sha256": "d83f0fde30f306a3e23a5308eb308b8a611376591654557cce0b8efcdd24d260",
+      "solutions_tex_sha256": "617e05d2854d0b1db234d2c42eb11860e8c8b7c09adb897d8df3dd9a6bb81904",
+      "source_discrepancies": [
+        "Worked-solutions source labels the solution for Question 4(h) as 4(f), duplicating its earlier 4(f) heading. The answer content is retained, and the heading follows the source so its audit count matches."
+      ]
+    },
+    {
+      "skill": "2.24",
+      "title": "Differentiation: Inverse Trigonometric Functions",
+      "questions": 26,
+      "solution_entries": 50,
+      "questions_tex_sha256": "1161eceb9bfeaf98784af0d19c2fa94d4711c8b5baf87dcbf3aedc5d06c078b8",
+      "solutions_tex_sha256": "6310cfe5dd772c19f01a94c04b165141ee21ca6c10e0386449a5e5c226174245",
+      "source_discrepancies": [
+        "Worked Solution 18 calls (0,0) a non-stationary point of inflection after identifying it as a stationary point and finding dy/dx=0 there. The source wording is retained.",
+        "Worked Solution 23 differentiates the quadratic radicand using -2(x+5), although it is -2(x-5); the next line also uses -(x-5)^2. The source working is retained exactly.",
+        "Worked Solution 25 differentiates arccos(y) with a positive derivative. Its stated relation and point imply dy/dx=-3 at (1/6,-1/2), whereas the source reports +3; the source derivation and answer are retained.",
+        "Worked Solutions 26(a) and 26(b) omit absolute values when replacing sqrt(x^2) with x in the inverse cosecant and inverse secant derivatives. The source formulae are retained."
+      ]
+    },
+    {
+      "skill": "2.25",
+      "title": "Integration: Inverse Trigonometric Functions",
+      "questions": 51,
+      "solution_entries": 133,
+      "questions_tex_sha256": "100dcee3f4ced5d3332c7972520ff37c35a4c39dacbd3ebe268105e57ded0c9d",
+      "solutions_tex_sha256": "7f1efa2e3958c13d30389f2b48ae560d7d7e3cf119da909fbddc22c6350451de",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.26",
+      "title": "Differentiation: Inverse Hyperbolic Functions",
+      "questions": 27,
+      "solution_entries": 52,
+      "questions_tex_sha256": "83bce3e102f2a1d6d6dbb32816af00a9b9cb4fb608cba7580b9f182beb8f7269",
+      "solutions_tex_sha256": "f8117bc9b96c8f5cd0961f826922b99252931f92cf23230ceff8f897b15f1855",
+      "source_discrepancies": [
+        "Question 18(b) applies arcosh to tanh x, whose real values lie strictly between -1 and 1, so it has no real-valued domain as written. Question 18(f) applies artanh to cosh x, which is at least 1, so it likewise has no real-valued domain. The source exercises and formal derivatives are retained."
+      ]
+    },
+    {
+      "skill": "2.27",
+      "title": "Integration: Inverse Hyperbolic Functions",
+      "questions": 57,
+      "solution_entries": 154,
+      "questions_tex_sha256": "1fa703b4aaca0b02397692fee6710a79878ab09f704441371f5abb56632e452e",
+      "solutions_tex_sha256": "e4c22ad2219af5890f61fc2d62f9d3c0175e785e647ac592a7a3fa9e6f68ae0f",
+      "source_discrepancies": [
+        "The printed worked solution for Question 39(b) gives arctanh(x+13), while completing the square of the question denominator gives 1-(x-13)^2 and hence arctanh(x-13); the source wording is retained and the discrepancy is recorded."
+      ]
+    },
+    {
+      "skill": "2.28",
+      "title": "Integration: Substitutions Mix",
+      "questions": 8,
+      "solution_entries": 51,
+      "questions_tex_sha256": "e661ccb365cb862a86a628f4dee5a814e62d89d504af100f52beaa3ba0b5780f",
+      "solutions_tex_sha256": "b23aa8c6cc46c7186909d116cc743b2144f5e4b87d17920139fe0fae3b1e0c1f",
+      "source_discrepancies": [
+        "In the printed worked solutions, Question 2(c) gives the antiderivative with arctanh(1/(6x)); this is retained as printed, although it does not differentiate to 1/(36-x^2).",
+        "Textbook Question 5(f) has numerator 7, while the separate worked-solutions PDF works an integral with numerator 10. Both source versions are retained in their respective documents.",
+        "The printed worked solutions finish Question 3(g) by labeling its result as the integral from Question 3(b); the working and result themselves are retained.",
+        "Question 7 shades x=1 to x=2 in the textbook diagram, while the worked-solutions PDF evaluates x=0 to x=1. The curve is symmetric about x=1, so the areas agree; the printed solution bounds are retained."
+      ]
+    },
+    {
+      "skill": "2.29",
+      "title": "Integration: Advanced Methods (Trigonometric)",
+      "questions": 31,
+      "solution_entries": 61,
+      "questions_tex_sha256": "0bba1943cff19a4cf797f59f1354351014a6ffbe8d21da4f60c9bde91b1456a9",
+      "solutions_tex_sha256": "6d5abb368873ba469bb5015adc8c47e54e352f27e6d3432089e2679122eb4ffa",
+      "source_discrepancies": [
+        "Worked solution 12(b) ends with sqrt(19+19x-x^2), although the question and preceding steps use sqrt(19+18x-x^2); the printed final expression is retained.",
+        "The textbook question for Q18 gives area 2sqrt(3)-2-pi/(2sqrt(3)); the worked-solutions PDF concludes with a plus sign. The printed worked-solution result is retained.",
+        "Question 20 states 2pi-ln(p), while the worked-solutions PDF derives 2pi+ln(16) and identifies p=16; the source working is retained.",
+        "The introductory sentences in worked solutions 30(b) and 30(c) refer to finding the derivative of arccosec, although those parts concern arcsec and arccot; the printed wording is retained."
+      ]
+    },
+    {
+      "skill": "2.30",
+      "title": "Integration: Advanced Methods (Hyperbolic)",
+      "questions": 27,
+      "solution_entries": 50,
+      "questions_tex_sha256": "505471bbdb08a441fe8849050e199ee0f31cdd4ea30f1f01551fff91f6b8299b",
+      "solutions_tex_sha256": "a2059f6e6499bece673f4419ae649e2fcf8963fee7bcb4863da026de48c4c3ef",
+      "source_discrepancies": [
+        "The printed worked-solutions heading says \u201canswers on page ???\u201d, while the textbook question pages say answers are on page 236.",
+        "Worked solution 3 has an intermediate evaluation line with \u221220\u03c0 inside a parenthesis, but the next line changes this to \u221210\u03c0; the printed inconsistency is retained in the transcription."
+      ]
+    },
+    {
+      "skill": "2.31",
+      "title": "Improper Integrals",
+      "questions": 39,
+      "solution_entries": 60,
+      "questions_tex_sha256": "6ff3339934e485e7cc8ad556564a93508c2029a971b3c499f21f87dd222d441a",
+      "solutions_tex_sha256": "b4b639de5bfac186c407e44e63b987cc4a9258baaaa2276a5e5c2579cc388a64",
+      "source_discrepancies": [
+        "Worked solution 2(c) states that 1/a^2 tends to zero, although the term evaluated immediately above is 1/a^3; the printed statement is retained.",
+        "Worked solution 23 prints the integral numerator as 3x\u22122 in one line, although the question and the displayed partial-fraction decomposition use numerator 2; the source line is retained."
+      ]
+    },
+    {
+      "skill": "2.32",
+      "title": "Mixed Integration Practice",
+      "questions": 8,
+      "solution_entries": 22,
+      "questions_tex_sha256": "70ba304ef7a8dd5b5ea58bc9bf9faa464c6c1f563f1f2008c9e37026e72c92ae",
+      "solutions_tex_sha256": "dc7753fb4fd28ef3004a56add76a74a75d6b6a0f308628111b262f1ae18707b9",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.33",
+      "title": "Reduction Formulae for Integration",
+      "questions": 30,
+      "solution_entries": 62,
+      "questions_tex_sha256": "9e04b039712c4951d168e618a2395282dd89fc4909b4484b8594a771f2ad1836",
+      "solutions_tex_sha256": "b4a32b46f1a31c9d3926b7d524efa0225ac6e9b4b6e2ce42bdbb2b42b900879f",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.34",
+      "title": "Mean Value \u2013 Part 2",
+      "questions": 18,
+      "solution_entries": 31,
+      "questions_tex_sha256": "377a4fe9de7bae644310eb9865038cc63202cf36524404013db6cddec48dbf9f",
+      "solutions_tex_sha256": "31a5dcd23af7dc263fd2afd234e838b5b6a1866be1f62fae6abff08945ee33b4",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.35",
+      "title": "Volume of Revolution \u2013 Part 2",
+      "questions": 41,
+      "solution_entries": 94,
+      "questions_tex_sha256": "a6181540c90808ac17792fd1bf9bbdb6d00e311a60964b559bd9b4d156d96e95",
+      "solutions_tex_sha256": "bc61b204f695ffc9ad39d4f3bc9ec16c2807888b282c089c84675492552671c7",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.36",
+      "title": "Volume of Revolution: Parametric Equations",
+      "questions": 13,
+      "solution_entries": 28,
+      "questions_tex_sha256": "6bc9912de5369f596cb25d9b7db3f22b6bd9f9f4b1dbaf639e0e0ecd729f7432",
+      "solutions_tex_sha256": "5e33804e6a17f1b78f36d39b1baf6e697b3631fd8df90e773dedc75844043ad7",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.37",
+      "title": "Integration: Lengths",
+      "questions": 25,
+      "solution_entries": 43,
+      "questions_tex_sha256": "5746ce9406d734536723c3b6460962b2c81f5787ec5016ed172f291f42842ed5",
+      "solutions_tex_sha256": "2eb4937a78efa667695f29b2d0ec428dbaf0a1ba344732e7eb2e69ee98cfeb20",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.38",
+      "title": "Integration: Surface Area",
+      "questions": 20,
+      "solution_entries": 35,
+      "questions_tex_sha256": "9dc1ce1cbab996cfbe44f7db5545b6932a6bfbdf3ac582fc6eec81fd96c9275f",
+      "solutions_tex_sha256": "0c0edbaee40460c2f00beefffdb073e9b3cc3213dbfdd217355319df324548df",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.39",
+      "title": "1st Order DEs: Integrating Factors",
+      "questions": 45,
+      "solution_entries": 100,
+      "questions_tex_sha256": "38af452e4a5397b4c4882ef0f224dcecdf501b176ee8b6a0248b0266403a27a5",
+      "solutions_tex_sha256": "62b3b76c263c3658850b7f78171a14da1a6a236ffae17833709afe9be4a2edd5",
+      "source_discrepancies": [
+        "Q28b textbook gives y=1/3 at x=1; worked solution uses y=e/3.",
+        "Q34b textbook gives y=2/3 at x=0; worked solution substitutes y=5/3.",
+        "Original Q8a working writes integral 1 dy for an integrating factor in x.",
+        "Original Q16d final solution is y=x^3+cx, retained as printed."
+      ]
+    },
+    {
+      "skill": "2.40",
+      "title": "1st Order DEs: Sketching Solutions",
+      "questions": 16,
+      "solution_entries": 56,
+      "questions_tex_sha256": "f961c5a201dc015984a6c351fa30bd083c6872f73877057b1492a5df9d6a7bfc",
+      "solutions_tex_sha256": "16f95e16edc2949a09be0113fa6efe38649204fb98caa52dcf65ec83ff088e19",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.41",
+      "title": "1st Order DEs: Modelling",
+      "questions": 46,
+      "solution_entries": 142,
+      "questions_tex_sha256": "db064163bd85b69159b609f0b1f48b24d8551bdc102309f98178619c77b2c6d3",
+      "solutions_tex_sha256": "2d8aed478e3859da37ce8c2cc17ae1b388ca511d38962cc4bfa9f154517c16fb",
+      "source_discrepancies": [
+        "1(d): the question asks for dV/dt, but the printed solution concludes dx/dt=k(200\u2212V).",
+        "29(b): the printed solution changes the coffee temperature variable from T to M and gives M=20+50e^(\u22120.18t) in the final expression.",
+        "33(c): the printed concentration discussion calls the gas carbon dioxide \u201csalt\u201d and gives kg per litre.",
+        "40(e), Method 2: the derivation states v=3\u2212Ae^(\u2212t), but the substitution uses 3+Ae^(\u22123), and the final expression uses a plus sign.",
+        "41(e): the source says \u201cdiving force\u201d where the context indicates \u201cdriving force\u201d."
+      ]
+    },
+    {
+      "skill": "2.42",
+      "title": "2nd Order DEs: Homogeneous",
+      "questions": 34,
+      "solution_entries": 106,
+      "questions_tex_sha256": "0780184fd54164deefdfc5a3f3cf1b7b609161d4c2288c03d294cefa16027cb9",
+      "solutions_tex_sha256": "af208047fa3948c7e2f9c6bea98447ec3c4a66efe50b6c8b7d8ebab2eb056830",
+      "source_discrepancies": [
+        "Question 14 prints d/dx(e^{ikx})=ke^{ikx}, omitting the factor i.",
+        "Solution 2(c) and 2(d) switch e^{5x} to e^{2x} in intermediate simplifications, then conclude zero; the printed working is preserved.",
+        "Solution 12 labels the particular solution with y although the dependent variable in the question and preceding working is x.",
+        "Question 32(d) prints squared sine and cosine terms, while its printed solution proceeds with unsquared terms and solves y\u2033+(4/9)y=0.",
+        "Solution 31(d), 31(f), 31(k), and 31(q) omit =0 after the displayed factorization before stating the roots."
+      ]
+    },
+    {
+      "skill": "2.43",
+      "title": "2nd Order DEs: Non-Homogeneous",
+      "questions": 43,
+      "solution_entries": 139,
+      "questions_tex_sha256": "05653fa649bf69f30e84f93210749119174473b60f119313d7da46b73742b71a",
+      "solutions_tex_sha256": "34f6ef4df8621ea1b678ba0a1ec177e2ae44b60310842ab94896131a9111a147",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.44",
+      "title": "2nd Order DEs: Substitutions",
+      "questions": 17,
+      "solution_entries": 33,
+      "questions_tex_sha256": "0c1c537931e521e49d86f531369b8e8bd42f6477c92fffb3bc17962162cdbc15",
+      "solutions_tex_sha256": "3601086f04120fab70d7d79d991138df8d74e77976f4d13a8fa87ebe7e799c36",
+      "source_discrepancies": [
+        "Q16(b): the question gives RHS 9t^2+6, while Q16(a) and the worked solution use RHS 9t^2+20e^{-3t}; both printed forms are retained.",
+        "Q17: the question has coefficient 2 sin x on dy/dx, while the worked solution starts with coefficient sin 2x; both printed forms are retained."
+      ]
+    },
+    {
+      "skill": "2.45",
+      "title": "2nd Order DEs: Modelling",
+      "questions": 10,
+      "solution_entries": 47,
+      "questions_tex_sha256": "dfb225bc55d0f825729453614a8e0309fd4f35a0403b9af19335f8bb216ed1a3",
+      "solutions_tex_sha256": "86d95e168c5dc88dcdf36f94df66f79897f7cb7b48ce338f4e71c25ac0503a40",
+      "source_discrepancies": [
+        "7(a): the printed solution first gives the differential equation with right-hand side 12+t, then uses 17+t in the particular-integral working; the question states 17+t. Both solution lines are preserved.",
+        "7(a): the complementary function is labelled v although the dependent variable is T; the printed variable is retained.",
+        "5(c): the source states t e^(\u2212t) tends to zero, following e^(\u221220t) in the displacement; this wording is retained."
+      ]
+    },
+    {
+      "skill": "2.46",
+      "title": "2nd Order DEs: Simple Harmonic Motion",
+      "questions": 39,
+      "solution_entries": 104,
+      "questions_tex_sha256": "279e88ebc16c5be2628bd9920ecfb1419550f178e1bfd53036c69a01a37117cb",
+      "solutions_tex_sha256": "f6648a8be019ab6cc118b0287dd06b5bd0711a6e90b69808f9dc5ad4217a0d54",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.47",
+      "title": "2nd Order DEs: Introducing Damping",
+      "questions": 14,
+      "solution_entries": 65,
+      "questions_tex_sha256": "f1d15c011d2c350f80c3e000fdbe1c83db6be17fc0f09e0aac259634fb2546ea",
+      "solutions_tex_sha256": "bcbf9581a20ee7a887f42b08a3fbf839e0dd8fa82a0f50efd4b66c54bd7d30cb",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.48",
+      "title": "2nd Order DEs: Damped Motion",
+      "questions": 24,
+      "solution_entries": 82,
+      "questions_tex_sha256": "805e9e8baba174440d9dd6eadde2fdd5517c8fc2674f5e6a3720161a32b2afe0",
+      "solutions_tex_sha256": "4533e253529352544a1979104f13bc0b14e325212d45255e65816cf68af5ad4a",
+      "source_discrepancies": [
+        "Question 13 specifies upward-positive displacement and an initial position 18 cm above equilibrium with an upward velocity, while the printed solution switches to downward-positive convention and substitutes x=18 and dx/dt=8. The printed solution is retained.",
+        "Question 18 prints 13x=26 in the differential equation and requests a sketch of x, although the surrounding text, the other terms, and the worked solution use theta. Both question notations are retained as printed."
+      ]
+    },
+    {
+      "skill": "2.49",
+      "title": "2nd Order DEs: Hooke\u2019s Law",
+      "questions": 26,
+      "solution_entries": 74,
+      "questions_tex_sha256": "3beafa67e03382cff4461e17b5646d362f055ac0b8c1df1f59d1013e6ec941d9",
+      "solutions_tex_sha256": "79e0d001ab865b7871e3661120fbf898d888d45a38f972c7eb37b745efa03519",
+      "source_discrepancies": [
+        "18(a): the solution says \u201cthe midpoint M\u201d and then says \u201cWhen the particle is at O\u201d; both printed labels are retained.",
+        "22: the question describes a displacement of 0.2 m towards L, while the solution defines positive displacement towards R and substitutes x=+0.2 at t=0; both printed conventions are retained."
+      ]
+    },
+    {
+      "skill": "2.50",
+      "title": "Coupled 1st Order Linear DEs",
+      "questions": 30,
+      "solution_entries": 106,
+      "questions_tex_sha256": "c03d296dec85585cad57b7e29cdf3bb99dbe02b6dde1aebdcc2c3d2e3f52440d",
+      "solutions_tex_sha256": "b1cab6a5b8d89484c0abafc56cca311ac7cce36f45de1714f09f35f1655fda08",
+      "source_discrepancies": [
+        "Q24(b): the question states that liquid flows from D to C at 9 L/min, while the printed solution uses 15 L/min from D to C and a 10 L/min outlet. Both printed forms are retained.",
+        "Q29 solution headings are out of order: 29(d) appears before 29(c), and a second 29(d) introduces the equation for q. The printed order and duplicated label are retained."
+      ]
+    },
+    {
+      "skill": "2.51",
+      "title": "Graph Sketching: Polar Curves \u2013 Part 2",
+      "questions": 10,
+      "solution_entries": 30,
+      "questions_tex_sha256": "385c76da2197a1254a99773d4efb97f1624d097bb1a4f9308e1babf13edf6c18",
+      "solutions_tex_sha256": "311bfd8c82c73d182fe9f5cb7a873d5d6739e10be8b2b761b7279306a26c7239",
+      "source_discrepancies": [
+        "Question 7(f) gives r^2=7 sin(5\u03b8), while the printed solution 7(f) repeats the expression for 7(e), r^2=14 cos(5\u03b8); both printed forms are retained.",
+        "Solutions 9(a) and 9(b) label the polar radius expression as y=\u221a(64 sin(3\u03b8)); the subsequent Cartesian coordinates use radius 8. The printed working is retained.",
+        "Solution 10(a) joins disjoint intervals using intersection signs; the printed symbols are retained.",
+        "Solution 5(b) begins with sin(\u03b1\u2212\u03b8)=k, omitting r, then includes r in the next line; the printed working is retained."
+      ]
+    },
+    {
+      "skill": "2.52",
+      "title": "Polar Coordinates: Cartesian Equations \u2013 Part 2",
+      "questions": 11,
+      "solution_entries": 26,
+      "questions_tex_sha256": "e33911e999f583b04213845367c4d1b091a6e79f7d727211e072af99bf9ccb38",
+      "solutions_tex_sha256": "4f773d29cd75a7f0b77e7e36aa0804aace141f99c7ab81da223112f5b31fc0ce",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.53",
+      "title": "Polar Integration",
+      "questions": 47,
+      "solution_entries": 119,
+      "questions_tex_sha256": "b3b117912b74f71f6230dd6ecb2f477a8ed4c118813bc350df412849e4d30991",
+      "solutions_tex_sha256": "9c4d5ea28428f4038f3effd14ef4f12cd7675a10f0abddc5fc2946a98096e631",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.54",
+      "title": "Polar Differentiation",
+      "questions": 22,
+      "solution_entries": 70,
+      "questions_tex_sha256": "40372506dce0929dbcb7473173565166a1dca8f296dbbca1b7bcfa6ff6696109",
+      "solutions_tex_sha256": "995ab26e3ded0c8b60439c058b3190b0015dc01328a027e81fffc0de0e4d04cb",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.55",
+      "title": "Proof by Induction: General",
+      "questions": 15,
+      "solution_entries": 18,
+      "questions_tex_sha256": "7de2da58caabf1ecb25621a75c4ff018faa20b34fec8d9a1e81cc152ca52dc07",
+      "solutions_tex_sha256": "ed62464134236165e302b0a097b68aa24826199563d4e3edc37b369132d287a3",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.56",
+      "title": "Graph Sketching: Modulus Functions",
+      "questions": 12,
+      "solution_entries": 33,
+      "questions_tex_sha256": "4dce8c59cae27cd780aea41a4ac568f8bdaaa7aaf6a83922ac1023d61d1ce09c",
+      "solutions_tex_sha256": "48a0255fbfb29ea07f750f02213364198f46f227058ab5f73462fbc530985341",
+      "source_discrepancies": [
+        "Question 6 labels the point (-10,-25), while the corresponding printed solution graph labels it (-10,25); both source forms are retained."
+      ]
+    },
+    {
+      "skill": "2.57",
+      "title": "Modulus Functions: Inequalities",
+      "questions": 12,
+      "solution_entries": 24,
+      "questions_tex_sha256": "59e9bef10fdcffc868d6bc16bd7bf1d447358d3358e165698a253b54dcf0ddd4",
+      "solutions_tex_sha256": "87b6ed438a33e523027b6fa3f7af53746611a945343eb3f2be473b791e5f6728",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.58",
+      "title": "Graph Sketching: Reciprocal Functions",
+      "questions": 9,
+      "solution_entries": 21,
+      "questions_tex_sha256": "07099be0bde7dbae7aec60ab22d733853b4babc89e34009cdfa65bc968dcd4ff",
+      "solutions_tex_sha256": "c0ac07ccf3b7fa99cd619172baa9e57fd2fe59b539d7a16a3d28949f44fcd038",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.59",
+      "title": "Reciprocal Functions: Inequalities",
+      "questions": 7,
+      "solution_entries": 16,
+      "questions_tex_sha256": "dbf520ab8b487404eb39fe61980c35c837962207b49c7d95c552d0ee09336dd2",
+      "solutions_tex_sha256": "240b06f5ef35af4de9334031d660303bda811d31635c5e93c21f95d2a2f81ab8",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.60",
+      "title": "Graph Sketching: Advanced Rational Functions",
+      "questions": 19,
+      "solution_entries": 69,
+      "questions_tex_sha256": "9a6698c057752ea9defe2d9725e1417e29288e48e7db94b7ebceac441e7e1419",
+      "solutions_tex_sha256": "d93a66c7298699cb3c75829bff3ca441a8d4bf0e714d2845068430e0ae5ec5b1",
+      "source_discrepancies": [
+        "Question 8 states x\u22601 while its displayed denominator x+1 has excluded value x=-1. Both printed forms are retained.",
+        "Question 15(a) prints x^3+x^2\u22124 while its worked solution uses x^3+x^2+4. Both source forms are retained.",
+        "Question 15(d) prints numerator 3x^3+4x^2+x+1 while the worked solution uses 3x^3+4x^2+4x+1. Both source forms are retained.",
+        "Textbook Question 16 shows only part (a), while the worked-solutions PDF includes parts (a)\u2013(d); solution parts (b)\u2013(d) are retained as supplementary entries.",
+        "Question 17(c) and 17(d) appear to show denominators x+1 and x^2+a respectively, while the worked solutions use x\u22121 and x+a respectively. Both source forms are retained.",
+        "Question 2(a) long-division table and quotient give x\u22123+4/(x+1), but the printed numerator x\u00b2\u22122x\u22121 and the stated x-intercept equation do not agree with that quotient. The source forms and full table are retained.",
+        "Question 16(b) printed expansion of \u2212x\u00b2\u2212x+1+2/(x+1) does not match the numerator and coefficient values printed in the solution. The source wording is retained."
+      ]
+    },
+    {
+      "skill": "2.61",
+      "title": "Rational Functions: Domain and Range",
+      "questions": 19,
+      "solution_entries": 70,
+      "questions_tex_sha256": "4bd7003a4e0933f9e9934345028ce7eabae72a4b3f8d932dc1384c2164da9300",
+      "solutions_tex_sha256": "aaf43c98085efdad45692c746c16ab0478314e1afad69377d988b5ea809fd892",
+      "source_discrepancies": [
+        "Question 6 solution source uses a union between the two excluded-value domain sets; the LaTeX transcription states the equivalent intended domain with both x values excluded.",
+        "Question 15 solution contains an intermediate denominator/asymptote x+1 (x=\u22121), while the question denominator x+4 gives the vertical asymptote x=\u22124. The question and solution working are retained with the discrepancy identified."
+      ]
+    },
+    {
+      "skill": "2.62",
+      "title": "Conics: Composite Transformations",
+      "questions": 25,
+      "solution_entries": 97,
+      "questions_tex_sha256": "172832cb121e907e812e0af4aed5070172c3ae99a39d21b32cd400687ac09d04",
+      "solutions_tex_sha256": "2b225be9efe5e8a09f3978d2725ed94ff46cfba4465d604c91a3d457dd5ee277",
+      "source_discrepancies": [
+        "Question 2(a) specifies a y-stretch factor of 4; solution working agrees, despite a source text slip that appears to say 3.",
+        "Question 3(e) specifies enlargement factor 2; printed working uses division by 2 and obtains xy=64, but its prose says factor 3.",
+        "Question 7(c) asks for reflection in y=-x, while the worked-solutions source uses y=x; transcribed as printed in each document."
+      ]
+    },
+    {
+      "skill": "2.63",
+      "title": "Numerical Methods: Mid-ordinate Rule",
+      "questions": 19,
+      "solution_entries": 48,
+      "questions_tex_sha256": "c55beb84269b9a984831783994e49f8afca922857077a99d805a7c7a1a1ac080",
+      "solutions_tex_sha256": "9d62ac2037e78741d63b58d40b4078bfd0aa0c3f3105a6aec86d8e8ed6146db8",
+      "source_discrepancies": [
+        "Question 10 requests three significant figures, while the worked-solution source labels its result as two decimal places (the displayed value 2.21 is numerically the same at both precisions).",
+        "Question 13(c) states that the trapezium estimate underestimates and the mid-ordinate estimate overestimates, contradicting its displayed estimates 8.40126 and 7.86079 around the supplied better estimate 8.03871.",
+        "Question 15(c) asks for the integral of f(x) over [2,3], while the worked-solution source prints an integral of sin(x^2) over [2,3] and multiplies by 3.",
+        "Question 15(d) asks for the integral of f(x) over [2,3]; the worked-solution source labels its final integral with limits 0 and 2 despite using midpoint values for [2,3]."
+      ]
+    },
+    {
+      "skill": "2.64",
+      "title": "Numerical Methods: Simpson\u2019s Rule",
+      "questions": 21,
+      "solution_entries": 21,
+      "questions_tex_sha256": "f800151d5472cdbe1b7deaa3d5949db555dc248833f22daa79699b2a1910107b",
+      "solutions_tex_sha256": "6aee1c4f502f02151cb7cad2eb857a80bacca20e3428fa4e87fe95177560fa00",
+      "source_discrepancies": [
+        "Solution 6(a) prints the unrelated integral from 1 to 2 of 1/(1+ln x), although its ordinate table and numerical calculation use e^(cos x), as required by Question 6(a). The printed integral notation has been preserved."
+      ]
+    },
+    {
+      "skill": "2.65",
+      "title": "Numerical Methods: Euler's Step by Step Method",
+      "questions": 18,
+      "solution_entries": 33,
+      "questions_tex_sha256": "3c41b8998fd973869aa93cbdc7bb7320056022a4c213be1d9413751241687b78",
+      "solutions_tex_sha256": "e8169311289783f6b1e026ee9945fcdb36701a90027a0f5a10c2971f8ee79474",
+      "source_discrepancies": [
+        "3(b): the printed working substitutes 0.5 instead of y1=1.5 in the next Euler step; retained as printed.",
+        "18: the printed working begins with W0=100 but substitutes 1000 in the next line; the final 9-hour time label is printed as 3+6=9. Retained as printed."
+      ]
+    },
+    {
+      "skill": "2.66",
+      "title": "Numerical Methods: Improved Euler's Method",
+      "questions": 14,
+      "solution_entries": 28,
+      "questions_tex_sha256": "01cd975a457acd872bea2d61f1ed666aff5424994c15be86d52dcb47f27eb71b",
+      "solutions_tex_sha256": "ae169cc2282ce1e85e468b44bdcb69db1d182eaeed21c7a1900f8467b7a07580",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.67",
+      "title": "2D Matrices: Factorisation of Determinants",
+      "questions": 20,
+      "solution_entries": 55,
+      "questions_tex_sha256": "d37e7d5e5cdbe1410d90cc2e18e33965c3f0fc6913d589c11b125f3f76e3e1f3",
+      "solutions_tex_sha256": "40c1e5bdd3ae8683517e63c48e24cf9af1fa1239ee6b69f6630bdcc8345789e6",
+      "source_discrepancies": [
+        "13(a) source says factor (p+2q) out of C1 although the displayed factor is in C2; later source determinant changes bottom-left from 4p+5q to 4(p+q).",
+        "13(c) source says factor (2p\u22121) out of C1 although the displayed factor is in C2."
+      ]
+    },
+    {
+      "skill": "2.68",
+      "title": "2D Matrices: Eigenvalues and Eigenvectors",
+      "questions": 11,
+      "solution_entries": 34,
+      "questions_tex_sha256": "6617160a8e8e6a7bda270ab8672697e827f6ce6f6016a9c23e3cd571a27e0da5",
+      "solutions_tex_sha256": "653d7841bc73a96373885a67cd12df01f497702b2eb01fd709845d93b2bdc04e",
+      "source_discrepancies": [
+        "1(c): the printed working ends with \u03bb(1, 2) although the stated eigenvector is (1, \u22122).",
+        "7(a): the printed discriminant line states 49\u221248+4k = 0, followed by k > \u22121/4."
+      ]
+    },
+    {
+      "skill": "2.69",
+      "title": "2D Matrices: Diagonalisation",
+      "questions": 14,
+      "solution_entries": 28,
+      "questions_tex_sha256": "ddeca87a1f9cda56d50c8ea4b0b30d69eefba62a528f403ac48389d7eb94c992",
+      "solutions_tex_sha256": "ada04bfea305faa16e71d385a6d6a479c7fa16e8f9fb4e4354340ba0f03255e7",
+      "source_discrepancies": [
+        "2(b): the working states \u03bb\u2081=4 immediately before calculating A\u22125I and taking eigenvalue 5.",
+        "8(d): the line introducing the calculation states A\u2074, while the question and following calculation use A\u2075\u2070.",
+        "13: the working labels \u03bb\u2081=\u2212k and writes A+0I although the previous line gives \u03bb\u2081=0.",
+        "13: P\u207b\u00b9 is printed with denominator p\u2212q, while the determinant of the displayed P is p+q.",
+        "14: the final line concludes k\u00b2\u207f A\u207f although the question asks to show A\u00b2\u207f\u207a\u00b9=k\u00b2\u207f A."
+      ]
+    },
+    {
+      "skill": "2.70",
+      "title": "2D Matrices: Transformations",
+      "questions": 10,
+      "solution_entries": 30,
+      "questions_tex_sha256": "22757636d45ebd6b8ebd08c6b2ad18becefd59634a8c1f1a3be2c2d312accc72",
+      "solutions_tex_sha256": "732952d37be4af353db25e58ffd6266f5ce180eec2911ffe24a0e820778d68a3",
+      "source_discrepancies": []
+    },
+    {
+      "skill": "2.71",
+      "title": "3D Matrices: Factorisation of Determinants",
+      "questions": 31,
+      "solution_entries": 92,
+      "questions_tex_sha256": "5fef52c85125cea8fb3ab9217bca8a8a7603cce6e15cd6f8e83e4e34af39ec1e",
+      "solutions_tex_sha256": "8437479f42e6b6f92bedd81b64ef7281536646e811b1135cb31a5f3cccfc4beb",
+      "source_discrepancies": [
+        "Q5: source factors k\u22122 in an intermediate line, then concludes with k+2.",
+        "Q9(c): source states R3\u2190R3\u22124R1, but the printed resulting row is [0,\u22123,\u22123].",
+        "Q18(d): source states R3\u2190R3\u2212(2/5)R2; printed resulting row is consistent with adding (2/5)R2."
+      ]
+    },
+    {
+      "skill": "2.72",
+      "title": "3D Matrices: Eigenvalues and Eigenvectors",
+      "questions": 18,
+      "solution_entries": 53,
+      "questions_tex_sha256": "eef5fcce1b09cda2d6f2fb2fd18c9fcc37e53276319f4f8b1f69f12bf6f1f322",
+      "solutions_tex_sha256": "a15524b5d62d9b3fbcaa04d58123d241998a7465d522aee32a375a0786bbfa60",
+      "source_discrepancies": [
+        "8(b): the source asks for eigenvectors for the complex eigenvalues but prints only the real-eigenvalue eigenvector; no missing vectors were invented.",
+        "The original solution labels are retained where their matrix powers, eigenvalue labels, or intermediate arithmetic conflict with the question or with later lines."
+      ]
+    },
+    {
+      "skill": "2.73",
+      "title": "3D Matrices: Diagonalisation",
+      "questions": 10,
+      "solution_entries": 19,
+      "questions_tex_sha256": "18192cc2f40f7ced9bc1eaa1714d420ecfba1fe6c89e2a7e1d43b06ec4900c0a",
+      "solutions_tex_sha256": "f59905a798987a50624764f5003de894ba5a7d13bcc3bd63ebd84dcf372c2b8a",
+      "source_discrepancies": [
+        "Q8(a): the printed final M^n entries do not match the preceding P D^n P^{-1} multiplication; printed final entries retained.",
+        "Q9: under \u03bb3=2k, the source labels the matrix A\u2212kI.",
+        "Q10(b): the source labels the third eigenvalue \u03bb3=a before writing A\u2212bI, then labels its eigenvector v2."
+      ]
+    },
+    {
+      "skill": "2.74",
+      "title": "3D Matrices: Transformations",
+      "questions": 8,
+      "solution_entries": 24,
+      "questions_tex_sha256": "500c4288ef1828c1d80241b779d4515d8f02e8e88c842584d6f592c324044432",
+      "solutions_tex_sha256": "ada64883df84c6c7e778812ce520d111371e68146f5c1221b6f08d202b628779",
+      "source_discrepancies": []
+    }
+  ]
+}
