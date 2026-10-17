@@ -4,13 +4,18 @@ let current=null,history=[],mode='hidden',stage=0,view='split';
 const remembered=new Map(),pools=new Map(),contentCache=new Map();let navigationRevision=0;
 const mathMacros={'\\cosec':'\\operatorname{cosec}','\\cosech':'\\operatorname{cosech}','\\sech':'\\operatorname{sech}','\\coth':'\\operatorname{coth}','\\arcosech':'\\operatorname{arcosech}','\\arcsech':'\\operatorname{arcsech}','\\arsech':'\\operatorname{arsech}','\\arcoth':'\\operatorname{arcoth}','\\arsinh':'\\operatorname{arsinh}','\\arcosh':'\\operatorname{arcosh}','\\artanh':'\\operatorname{artanh}','\\Real':'\\operatorname{Re}','\\Imag':'\\operatorname{Im}','\\ssum':'\\sum_{r=1}^{#1}#2','\\arraystretch':'1'};
 function renderMath(root){for(const node of root.querySelectorAll('[data-math]'))katex.render(node.dataset.math,node,{displayMode:node.dataset.display==='true',throwOnError:true,strict:'error',macros:{...mathMacros}});}
-async function loadSkill(skill){if(contentCache.has(skill.id)){skill.questions=contentCache.get(skill.id);return;}const response=await fetch('content/'+skill.id+'.json');if(!response.ok)throw Error('Unable to load '+skill.code);const questions=await response.json();if(questions.length!==skill.questions.length||questions.some(q=>!q.question||!q.steps?.length))throw Error('Incomplete skill '+skill.code);contentCache.set(skill.id,questions);skill.questions=questions;}
+async function loadSkill(skill){if(contentCache.has(skill.id)){skill.questions=contentCache.get(skill.id);return;}let questions=window.FMQ_CONTENT?.[skill.id];if(!questions){const response=await fetch(new URL('content/'+encodeURIComponent(skill.id)+'.json',document.baseURI));if(!response.ok)throw Error('Unable to load '+skill.code+' ('+response.status+')');questions=await response.json();}if(questions.length!==skill.questions.length||questions.some(q=>!q.question||!q.steps?.length))throw Error('Incomplete skill '+skill.code);contentCache.set(skill.id,questions);skill.questions=questions;}
 const key=s=>[s.course,s.book,s.topic,s.skill].join('/');
+const isEdexcelOnly=()=>Boolean($('edexcel-only').checked);
+function openPrintout(path){const link=document.createElement('a');link.href=path;link.target='_blank';link.rel='noopener';link.click();}
+function printPath(kind){const r=resolve(current);if(kind==='topic')return `printouts/${r.book.id}/${r.topic.id}/${r.book.id==='pure-core-1'&&r.topic.id==='polar-curves'?'topic_v03.pdf':'topic_v02.pdf'}`;return `printouts/${r.book.id}/${r.topic.id}/skills/${r.skill.id}_${r.skill.code==='1.28'?'v03':'v02'}.pdf`;}
 function resolve(s={}){
  const course=library.courses.find(x=>x.id===s.course)||library.courses[0];
  const book=course.books.find(x=>x.id===s.book)||course.books[0];
- const topic=book.topics.find(x=>x.id===s.topic)||book.topics[0];
- const skill=topic.skills.find(x=>x.id===s.skill)||topic.skills.find(x=>x.available)||topic.skills[0];
+ const topicChoices=isEdexcelOnly()?book.topics.filter(x=>x.skills.some(y=>y.edexcel)):book.topics;
+ const topic=topicChoices.find(x=>x.id===s.topic)||topicChoices[0]||book.topics[0];
+ const skillChoices=isEdexcelOnly()?topic.skills.filter(x=>x.edexcel):topic.skills;
+ const skill=skillChoices.find(x=>x.id===s.skill)||skillChoices.find(x=>x.available)||skillChoices[0]||topic.skills[0];
  const state={course:course.id,book:book.id,topic:topic.id,skill:skill.id,question:Math.max(1,Math.min(skill.questions.length,Number(s.question)||1))};
  return {course,book,topic,skill,state};
 }
@@ -18,16 +23,17 @@ function populate(id,items,selected){$(id).replaceChildren(...items.map(x=>{cons
 async function navigate(s,record=true){
  const revision=++navigationRevision,r=resolve(s),next=r.state;
  $('question').setAttribute('aria-busy','true');
- try{if(r.skill.available)await loadSkill(r.skill);}catch(error){if(revision!==navigationRevision)return;$('question').textContent='This skill could not be loaded. Please check the prototype folder and try again.';$('question').removeAttribute('aria-busy');return;}
+ try{if(r.skill.available)await loadSkill(r.skill);}catch(error){console.error('FMQ skill load failed:',error);if(revision!==navigationRevision)return;$('question').textContent='This skill could not be loaded. Please check the prototype folder and try again.';$('question').removeAttribute('aria-busy');return;}
  if(revision!==navigationRevision)return;$('question').removeAttribute('aria-busy');
  if(current){remembered.set(key(current),current.question);if(record&&(key(current)!==key(next)||current.question!==next.question))history.push({...current});}
  current=next;mode='hidden';stage=0;
- populate('course',library.courses,next.course);populate('book',r.course.books,next.book);populate('topic',r.book.topics,next.topic);
+ populate('course',library.courses,next.course);populate('book',r.course.books,next.book);populate('topic',isEdexcelOnly()?r.book.topics.filter(t=>t.skills.some(s=>s.edexcel)):r.book.topics,next.topic);
  $('breadcrumbs').textContent=[r.course.title,r.book.title,r.topic.title].join(' › ');
  $('skilltitle').textContent=`${r.skill.code} ${r.skill.title}`;
+ $('print-topic').setAttribute('aria-label',`Print ${r.topic.title} topic`);$('print-skill').setAttribute('aria-label',`Print ${r.skill.title} skill`);
  const selected=r.skill.questions[next.question-1];$('qtitle').textContent=!r.skill.available?'Awaiting conversion':selected?.supplementary?`Additional worked solution ${selected.number}`:`Question ${next.question} of ${r.skill.questionCount}`;
  $('focus-question-number').textContent=$('qtitle').textContent;
- $('skills').replaceChildren(...r.topic.skills.map(skill=>{
+ $('skills').replaceChildren(...(isEdexcelOnly()?r.topic.skills.filter(skill=>skill.edexcel):r.topic.skills).map(skill=>{
   const button=document.createElement('button');button.className='skill-button';button.dataset.skill=skill.id;
   if(skill.id===next.skill)button.setAttribute('aria-current','page');
   const code=document.createElement('span');code.className='skill-code';code.textContent=skill.code;
@@ -60,6 +66,9 @@ function renderSolution(){
  $('stepcount').textContent=mode==='full'?'Complete solution':`Step ${stage} of ${total}`;
  $('nextstep').disabled=!resolve(current).skill.available||(stage>=total&&mode!=='hidden');$('backstep').disabled=stage===0;$('reset').disabled=stage===0;
 }
+$('edexcel-only').onchange=()=>navigate({...current});
+$('print-topic').onclick=()=>openPrintout(printPath('topic'));
+$('print-skill').onclick=()=>openPrintout(printPath('skill'));
 $('course').onchange=()=>navigate({course:$('course').value});
 $('book').onchange=()=>navigate({course:current.course,book:$('book').value});
 $('topic').onchange=()=>navigate({course:current.course,book:current.book,topic:$('topic').value});
