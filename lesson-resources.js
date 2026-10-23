@@ -1,42 +1,20 @@
 'use strict';
 window.FMQ_LESSONS=(()=>{
- const data=window.FMQ_LESSON_RESOURCES;
- const resourceBar=document.getElementById('lesson-resources');
- const dialog=document.getElementById('lesson-resource-dialog');
- let activeTopic=null,opener=null;
- function openChapter(chapter,kind){
-  const link=document.createElement('a');link.href=chapter[kind];link.target='_blank';link.rel='noopener';
-  if(kind==='slides')link.download=`P1-Chapter-${chapter.number}.pptx`;
-  link.click();
- }
- function show(kind){
-  if(!activeTopic)return;
-  const entries=activeTopic.chapters.map(entry=>({entry,chapter:data.chapters.find(c=>c.number===entry.number)})).filter(x=>x.chapter?.[kind]);
-  if(entries.length===1&&!entries[0].chapter.note){openChapter(entries[0].chapter,kind);return;}
-  opener=document.activeElement;
-  document.getElementById('lesson-resource-title').textContent=kind==='slides'?'Teaching slides':'Book chapters';
-  document.getElementById('lesson-resource-context').textContent=activeTopic.title+' · Pure Year 1. Choose a chapter.';
-  const links=entries.map(({entry,chapter})=>{
-   const link=document.createElement('a');link.className='lesson-resource-link';link.href=chapter[kind];link.target='_blank';link.rel='noopener';
-   if(kind==='slides')link.download=`P1-Chapter-${chapter.number}.pptx`;
-   const title=document.createElement('strong');title.textContent=`Chapter ${chapter.number}: ${chapter.title}`;
-   const detail=document.createElement('small');detail.textContent=kind==='slides'?`PowerPoint · ${chapter.slideCount} slides`:`PDF · textbook pages ${chapter.printedPages[0]}–${chapter.printedPages[1]}`;
-   const sections=document.createElement('small');sections.textContent=entry.focus;
-   link.append(title,detail,sections);
-   if(kind==='pdf'&&chapter.note){const note=document.createElement('small');note.className='lesson-resource-note';note.textContent=chapter.note;link.append(note);}
-   return link;
-  });
-  document.getElementById('lesson-resource-links').replaceChildren(...links);dialog.showModal();
- }
- document.getElementById('teaching-slides').onclick=()=>show('slides');
- document.getElementById('book-chapter').onclick=()=>show('pdf');
- document.getElementById('close-lesson-resources').onclick=()=>dialog.close();
- dialog.addEventListener('close',()=>opener?.focus());
- dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
- return {update({course,book,topic}){
-  if(dialog.open)dialog.close();
-  activeTopic=course.id===data.course&&book.id===data.book?data.topics.find(t=>t.id===topic.id):null;
-  resourceBar.hidden=!activeTopic?.chapters.length;
-  if(activeTopic){document.getElementById('teaching-slides').setAttribute('aria-label',`Teaching slides for ${topic.title}`);document.getElementById('book-chapter').setAttribute('aria-label',`Book chapters for ${topic.title}`);}
+ const data=window.FMQ_LESSON_RESOURCES,bar=document.getElementById('lesson-resources');
+ let selected=null;
+ const note=document.createElement('small');note.style.cssText='flex-basis:100%;line-height:1.4;color:#526575';bar.append(note);
+ const slides=document.getElementById('teaching-slides'),book=document.getElementById('book-chapter');
+ function open(kind){if(!selected)return;const a=document.createElement('a');a.href=selected[kind];a.target='_blank';a.rel='noopener';if(kind==='slides')a.download=`Pure-Year-1-Skill-${selected.code}.pptx`;a.click();}
+ slides.onclick=()=>open('slides');book.onclick=()=>open('pdf');book.textContent='Book sections';
+ return {update({course,book:currentBook,skill}){
+ selected=course.id===data.course&&currentBook.id===data.book?data.skillResources?.find(s=>s.code===skill.code):null;
+ bar.hidden=!selected;
+ if(!selected)return;
+ slides.setAttribute('aria-label',`Teaching slides for ${selected.code} ${selected.title}`);
+ book.setAttribute('aria-label',`Book sections for ${selected.code} ${selected.title}`);
+ const coverage=selected.coverage==='direct'?'':selected.coverage==='partial'?' · Partial coverage':' · Related support only';
+ note.textContent=`${selected.code} ${selected.title}${coverage}`;
+ note.title=selected.note;
+ slides.title=`${selected.slideCount} selected slides`;book.title=`${selected.pageCount} textbook pages · ${selected.sections.map(s=>s.section).join(', ')}${selected.code==='1.30'?' · Source page 257 is missing':''}`;
  }};
 })();
