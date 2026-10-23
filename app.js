@@ -2,19 +2,19 @@
 const $=id=>document.getElementById(id),library=window.FMQ_LIBRARY;
 let current=null,history=[],mode='hidden',stage=0,view='split';
 const remembered=new Map(),pools=new Map(),contentCache=new Map();let navigationRevision=0;
-const mathMacros={'\\cosec':'\\operatorname{cosec}','\\cosech':'\\operatorname{cosech}','\\sech':'\\operatorname{sech}','\\coth':'\\operatorname{coth}','\\arcosech':'\\operatorname{arcosech}','\\arcsech':'\\operatorname{arcsech}','\\arsech':'\\operatorname{arsech}','\\arcoth':'\\operatorname{arcoth}','\\arsinh':'\\operatorname{arsinh}','\\arcosh':'\\operatorname{arcosh}','\\artanh':'\\operatorname{artanh}','\\Real':'\\operatorname{Re}','\\Imag':'\\operatorname{Im}','\\ssum':'\\sum_{r=1}^{#1}#2','\\arraystretch':'1'};
+const mathMacros={"\\p":"\\mathrm P(#1)",'\\cosec':'\\operatorname{cosec}','\\cosech':'\\operatorname{cosech}','\\sech':'\\operatorname{sech}','\\coth':'\\operatorname{coth}','\\arcosech':'\\operatorname{arcosech}','\\arcsech':'\\operatorname{arcsech}','\\arsech':'\\operatorname{arsech}','\\arcoth':'\\operatorname{arcoth}','\\arsinh':'\\operatorname{arsinh}','\\arcosh':'\\operatorname{arcosh}','\\artanh':'\\operatorname{artanh}','\\Real':'\\operatorname{Re}','\\Imag':'\\operatorname{Im}','\\ssum':'\\sum_{r=1}^{#1}#2','\\arraystretch':'1'};
 function renderMath(root){for(const node of root.querySelectorAll('[data-math]'))katex.render(node.dataset.math,node,{displayMode:node.dataset.display==='true',throwOnError:true,strict:'error',macros:{...mathMacros}});}
-async function loadSkill(skill){if(contentCache.has(skill.id)){skill.questions=contentCache.get(skill.id);return;}let questions=window.FMQ_CONTENT?.[skill.id];if(!questions){const response=await fetch(new URL('content/'+encodeURIComponent(skill.id)+'.json',document.baseURI));if(!response.ok)throw Error('Unable to load '+skill.code+' ('+response.status+')');questions=await response.json();}if(questions.length!==skill.questions.length||questions.some(q=>!q.question||!q.steps?.length))throw Error('Incomplete skill '+skill.code);contentCache.set(skill.id,questions);skill.questions=questions;}
+async function loadSkill(skill){if(contentCache.has(skill.id)){skill.questions=contentCache.get(skill.id);return;}let questions=window.FMQ_CONTENT?.[skill.id];if(!questions){const response=await fetch(new URL('content/'+encodeURIComponent(skill.id)+'.json',document.baseURI));if(!response.ok)throw Error('Unable to load '+skill.code+' ('+response.status+')');questions=await response.json();}if(questions.length!==skill.questions.length||questions.some(q=>!q.question||(!q.reference&&!q.steps?.length)))throw Error('Incomplete skill '+skill.code);contentCache.set(skill.id,questions);skill.questions=questions;}
 const key=s=>[s.course,s.book,s.topic,s.skill].join('/');
-const isEdexcelOnly=()=>Boolean($('edexcel-only').checked);
-function openPrintout(path){const link=document.createElement('a');link.href=path;link.target='_blank';link.rel='noopener';link.click();}
-function printPath(kind){const r=resolve(current);if(kind==='topic')return `printouts/${r.book.id}/${r.topic.id}/${r.book.id==='pure-core-1'&&r.topic.id==='polar-curves'?'topic_v03.pdf':'topic_v02.pdf'}`;return `printouts/${r.book.id}/${r.topic.id}/skills/${r.skill.id}_${r.skill.code==='1.28'?'v03':'v02'}.pdf`;}
+const isEdexcelOnly=(courseId=current?.course)=>courseId!=='maths-a-level'&&Boolean($('edexcel-only').checked);
+function openPrintout(path){if(!path)return;const link=document.createElement('a');link.href=path;link.target='_blank';link.rel='noopener';link.click();}
+function printPath(kind){const r=resolve(current);if(r.course.id==='maths-a-level')return kind==='topic'?r.topic.printoutPath:r.skill.printoutPath;if(kind==='topic')return `printouts/${r.book.id}/${r.topic.id}/${r.book.id==='pure-core-1'&&r.topic.id==='polar-curves'?'topic_v03.pdf':'topic_v02.pdf'}`;return `printouts/${r.book.id}/${r.topic.id}/skills/${r.skill.id}_${r.skill.code==='1.28'?'v03':'v02'}.pdf`;}
 function resolve(s={}){
  const course=library.courses.find(x=>x.id===s.course)||library.courses[0];
  const book=course.books.find(x=>x.id===s.book)||course.books[0];
- const topicChoices=isEdexcelOnly()?book.topics.filter(x=>x.skills.some(y=>y.edexcel)):book.topics;
+ const topicChoices=isEdexcelOnly(course.id)?book.topics.filter(x=>x.skills.some(y=>y.edexcel)):book.topics;
  const topic=topicChoices.find(x=>x.id===s.topic)||topicChoices[0]||book.topics[0];
- const skillChoices=isEdexcelOnly()?topic.skills.filter(x=>x.edexcel):topic.skills;
+ const skillChoices=isEdexcelOnly(course.id)?topic.skills.filter(x=>x.edexcel):topic.skills;
  const skill=skillChoices.find(x=>x.id===s.skill)||skillChoices.find(x=>x.available)||skillChoices[0]||topic.skills[0];
  const state={course:course.id,book:book.id,topic:topic.id,skill:skill.id,question:Math.max(1,Math.min(skill.questions.length,Number(s.question)||1))};
  return {course,book,topic,skill,state};
@@ -26,26 +26,27 @@ async function navigate(s,record=true){
  try{if(r.skill.available)await loadSkill(r.skill);}catch(error){console.error('FMQ skill load failed:',error);if(revision!==navigationRevision)return;$('question').textContent='This skill could not be loaded. Please check the prototype folder and try again.';$('question').removeAttribute('aria-busy');return;}
  if(revision!==navigationRevision)return;$('question').removeAttribute('aria-busy');
  if(current){remembered.set(key(current),current.question);if(record&&(key(current)!==key(next)||current.question!==next.question))history.push({...current});}
- current=next;mode='hidden';stage=0;
+ current=next;mode='hidden';stage=0;$('edexcel-only').closest('label').hidden=r.course.supportsEdexcelFilter===false;
  populate('course',library.courses,next.course);populate('book',r.course.books,next.book);populate('topic',isEdexcelOnly()?r.book.topics.filter(t=>t.skills.some(s=>s.edexcel)):r.book.topics,next.topic);
  $('breadcrumbs').textContent=[r.course.title,r.book.title,r.topic.title].join(' › ');
  $('skilltitle').textContent=`${r.skill.code} ${r.skill.title}`;
+ $('print-topic').disabled=r.course.id==='maths-a-level'&&!r.topic.printoutPath;$('print-skill').disabled=r.course.id==='maths-a-level'&&!r.skill.printoutPath;
  $('print-topic').setAttribute('aria-label',`Print ${r.topic.title} topic`);$('print-skill').setAttribute('aria-label',`Print ${r.skill.title} skill`);
- const selected=r.skill.questions[next.question-1];$('qtitle').textContent=!r.skill.available?'Awaiting conversion':selected?.supplementary?`Additional worked solution ${selected.number}`:`Question ${next.question} of ${r.skill.questionCount}`;
+ const selected=r.skill.questions[next.question-1];$('qtitle').textContent=!r.skill.available?'Awaiting conversion':selected?.reference?'Reference tables':selected?.supplementary?`Additional worked solution ${selected.number}`:`Question ${next.question} of ${r.skill.questionCount}`;
  $('focus-question-number').textContent=$('qtitle').textContent;
  $('skills').replaceChildren(...(isEdexcelOnly()?r.topic.skills.filter(skill=>skill.edexcel):r.topic.skills).map(skill=>{
   const button=document.createElement('button');button.className='skill-button';button.dataset.skill=skill.id;
   if(skill.id===next.skill)button.setAttribute('aria-current','page');
   const code=document.createElement('span');code.className='skill-code';code.textContent=skill.code;
   const title=document.createElement('span');title.textContent=skill.title;
-  const count=document.createElement('span');count.className='skill-count';count.textContent=skill.available?`${skill.questionCount} questions`:'Awaiting conversion';button.disabled=!skill.available;
+  const count=document.createElement('span');count.className='skill-count';count.textContent=skill.reference?'Reference tables':skill.available?`${skill.questionCount} questions`:'Awaiting conversion';button.disabled=!skill.available;
   button.append(code,title,count);
   button.onclick=()=>{const target={...current,skill:skill.id};target.question=remembered.get(key(target))||1;navigate(target);};return button;
  }));
- $('choose').replaceChildren(...r.skill.questions.map(q=>{const o=document.createElement('option');o.value=q.number;o.textContent=q.supplementary?`Additional solution ${q.number}`:`Question ${q.number}`;return o;}));$('choose').value=next.question;
+ $('choose').replaceChildren(...r.skill.questions.map(q=>{const o=document.createElement('option');o.value=q.number;o.textContent=q.reference?'Reference tables':q.supplementary?`Additional solution ${q.number}`:`Question ${q.number}`;return o;}));$('choose').value=next.question;
  const q=r.skill.questions[next.question-1]||{question:'<p>This skill is awaiting LaTeX conversion.</p>',steps:[]};$('question').innerHTML=q.question;$('question').parentElement.scrollTop=0;
  $('solution').innerHTML=q.steps.map((html,i)=>`<div class="solution-step" data-step="${i}">${html}</div>`).join('');$('solution').parentElement.parentElement.scrollTop=0;
- $('previous').disabled=!r.skill.available||(!history.length&&next.question===1);for(const id of ['skip','random','choose','full','hide'])$(id).disabled=!r.skill.available;
+ $('previous').disabled=!r.skill.available||(!history.length&&next.question===1);for(const id of ['skip','random','choose','full','hide'])$(id).disabled=!r.skill.available||r.skill.reference;
  const hash=new URLSearchParams({course:next.course,book:next.book,topic:next.topic,skill:next.skill,question:next.question});
  try{window.history.replaceState(null,'','#'+hash);}catch{}
  document.title=`FMQ · ${r.skill.code} · Question ${next.question}`;
@@ -61,10 +62,10 @@ function setView(next){
 }
 function renderSolution(){
  const total=(resolve(current).skill.questions[current.question-1]?.steps.length||0);
- $('solutionempty').textContent=resolve(current).skill.available?'Choose Reveal next or Show full solution.':'This skill is awaiting LaTeX conversion.';$('solutionempty').hidden=mode!=='hidden';$('solutionclip').hidden=mode==='hidden';$('stepbar').hidden=mode==='hidden';
+ $('solutionempty').textContent=resolve(current).skill.reference?'Reference tables do not have worked solutions.':resolve(current).skill.available?'Choose Reveal next or Show full solution.':'This skill is awaiting LaTeX conversion.';$('solutionempty').hidden=mode!=='hidden';$('solutionclip').hidden=mode==='hidden';$('stepbar').hidden=mode==='hidden';
  for(const [i,node] of [...$('solution').children].entries())node.hidden=mode==='progress'&&i>=stage;
  $('stepcount').textContent=mode==='full'?'Complete solution':`Step ${stage} of ${total}`;
- $('nextstep').disabled=!resolve(current).skill.available||(stage>=total&&mode!=='hidden');$('backstep').disabled=stage===0;$('reset').disabled=stage===0;
+ $('nextstep').disabled=resolve(current).skill.reference||!resolve(current).skill.available||(stage>=total&&mode!=='hidden');$('backstep').disabled=stage===0;$('reset').disabled=stage===0;
 }
 $('edexcel-only').onchange=()=>navigate({...current});
 $('print-topic').onclick=()=>openPrintout(printPath('topic'));
@@ -76,7 +77,7 @@ $('choose').onchange=e=>navigate({...current,question:Number(e.target.value)});
 $('previous').onclick=()=>history.length?navigate(history.pop(),false):navigate({...current,question:Math.max(1,current.question-1)},false);
 $('skip').onclick=()=>navigate({...current,question:current.question%resolve(current).skill.questions.length+1});
 $('random').onclick=()=>{
- const k=key(current),count=resolve(current).skill.questionCount;let pool=pools.get(k);
+ const k=key(current),count=resolve(current).skill.questionCount;if(count<2)return;let pool=pools.get(k);
  if(!pool?.some(n=>n!==current.question))pool=Array.from({length:count},(_,i)=>i+1).filter(n=>n!==current.question);
  const candidates=pool.filter(n=>n!==current.question),n=candidates[Math.floor(Math.random()*candidates.length)];
  pools.set(k,pool.filter(x=>x!==n));navigate({...current,question:n});
