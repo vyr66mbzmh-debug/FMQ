@@ -4,7 +4,7 @@ window.FMQ_LESSONS=(()=>{
  let selected=null;
  const note=document.createElement('small');note.style.cssText='flex-basis:100%;line-height:1.4;color:#526575';bar.append(note);
  const slides=document.getElementById('teaching-slides'),book=document.getElementById('book-chapter');
- function open(kind){if(!selected)return;const a=document.createElement('a');a.href=selected[kind];a.target='_blank';a.rel='noopener';if(kind==='slides')a.download=`Pure-Year-1-Skill-${selected.code}.pptx`;a.click();}
+ function open(kind){if(!selected)return;const a=document.createElement('a');a.href=kind==='slides'?'lesson-viewer.html?skill='+encodeURIComponent(selected.code):selected[kind];a.target='_blank';a.rel='noopener';a.click();}
  slides.onclick=()=>open('slides');book.onclick=()=>open('pdf');book.textContent='Book sections';
  return {update({course,book:currentBook,skill}){
  selected=course.id===data.course&&currentBook.id===data.book?data.skillResources?.find(s=>s.code===skill.code):null;
