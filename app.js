@@ -28,6 +28,8 @@ async function navigate(s,record=true){
  if(current){remembered.set(key(current),current.question);if(record&&(key(current)!==key(next)||current.question!==next.question))history.push({...current});}
  current=next;mode='hidden';stage=0;$('edexcel-only').closest('label').hidden=r.course.supportsEdexcelFilter===false;
  populate('course',library.courses,next.course);populate('book',r.course.books,next.book);populate('topic',isEdexcelOnly()?r.book.topics.filter(t=>t.skills.some(s=>s.edexcel)):r.book.topics,next.topic);
+ window.FMQ_LESSONS?.update(r);
+ window.FMQ_LESSONS?.update(r);
  $('breadcrumbs').textContent=[r.course.title,r.book.title,r.topic.title].join(' › ');
  $('skilltitle').textContent=`${r.skill.code} ${r.skill.title}`;
  $('print-topic').disabled=r.course.id==='maths-a-level'&&!r.topic.printoutPath;$('print-skill').disabled=r.course.id==='maths-a-level'&&!r.skill.printoutPath;
