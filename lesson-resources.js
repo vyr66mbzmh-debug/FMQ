@@ -1,20 +1,5 @@
 'use strict';
-window.FMQ_LESSONS=(()=>{
- const data=window.FMQ_LESSON_RESOURCES,bar=document.getElementById('lesson-resources');
- let selected=null;
- const note=document.createElement('small');note.style.cssText='flex-basis:100%;line-height:1.4;color:#526575';bar.append(note);
- const slides=document.getElementById('teaching-slides'),book=document.getElementById('book-chapter');
- function open(kind){if(!selected)return;const a=document.createElement('a');a.href=kind==='slides'?'lesson-viewer.html?skill='+encodeURIComponent(selected.code):selected[kind];a.target='_blank';a.rel='noopener';a.click();}
- slides.onclick=()=>open('slides');book.onclick=()=>open('pdf');book.textContent='Book sections';
- return {update({course,book:currentBook,skill}){
- selected=course.id===data.course&&currentBook.id===data.book?data.skillResources?.find(s=>s.code===skill.code):null;
- bar.hidden=!selected;
- if(!selected)return;
- slides.setAttribute('aria-label',`Teaching slides for ${selected.code} ${selected.title}`);
- book.setAttribute('aria-label',`Book sections for ${selected.code} ${selected.title}`);
- const coverage=selected.coverage==='direct'?'':selected.coverage==='partial'?' · Partial coverage':' · Related support only';
- note.textContent=`${selected.code} ${selected.title}${coverage}`;
- note.title=selected.note;
- slides.title=`${selected.slideCount} selected slides`;book.title=`${selected.pageCount} textbook pages · ${selected.sections.map(s=>s.section).join(', ')}${selected.code==='1.30'?' · Source page 257 is missing':''}`;
- }};
-})();
+window.FMQ_LESSONS=(()=>{const data=window.FMQ_LESSON_RESOURCES,bar=document.getElementById('lesson-resources'),slides=document.getElementById('teaching-slides'),book=document.getElementById('book-chapter'),note=document.createElement('small');note.style.cssText='flex-basis:100%;line-height:1.4;color:#526575';bar.append(note);let selected=null,chapters=[];
+function open(url){location.assign(url);}
+function choose(kind){if(!selected)return;if(chapters.length===1){open(kind==='slides'?`lesson-viewer.html?skill=${selected.code}&chapter=${chapters[0]}`:data.chapters.find(c=>c.number===chapters[0]).pdf);return;}const dialog=document.getElementById('lesson-resource-dialog');document.getElementById('lesson-resource-title').textContent=kind==='slides'?'Teaching chapters':'Book chapters';document.getElementById('lesson-resource-context').textContent=`${selected.code} ${selected.title} uses these complete chapters.`;const list=document.getElementById('lesson-resource-links');list.replaceChildren();for(const n of chapters){const c=data.chapters.find(c=>c.number===n),a=document.createElement('a');a.className='lesson-resource-link';a.href=kind==='slides'?`lesson-viewer.html?skill=${selected.code}&chapter=${n}`:c.pdf;a.textContent=`Chapter ${n}: ${c.title}`;list.append(a);}dialog.showModal();}
+slides.onclick=e=>{if(chapters.length>1){e.preventDefault();choose('slides');}};book.onclick=e=>{if(chapters.length>1){e.preventDefault();choose('pdf');}};book.textContent='Book chapter';document.getElementById('close-lesson-resources').onclick=()=>document.getElementById('lesson-resource-dialog').close();return {update({course,book:currentBook,skill}){selected=course.id===data.course&&currentBook.id===data.book?data.skillResources?.find(s=>s.code===skill.code):null;bar.hidden=!selected;if(!selected)return;chapters=[...new Set(selected.sections.map(s=>s.chapter))];slides.setAttribute('aria-label',`Teaching chapter for ${selected.code} ${selected.title}`);book.setAttribute('aria-label',`Book chapter for ${selected.code} ${selected.title}`);note.textContent=chapters.map(n=>`Chapter ${n}: ${data.chapters.find(c=>c.number===n).title}`).join(' · ');slides.href=chapters.length===1?`lesson-viewer.html?skill=${selected.code}&chapter=${chapters[0]}`:'#';book.href=chapters.length===1?data.chapters.find(c=>c.number===chapters[0]).pdf:'#';slides.title='Complete original chapter slides';book.title='Complete textbook chapter';}};})();
