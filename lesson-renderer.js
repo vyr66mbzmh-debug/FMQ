@@ -30,8 +30,8 @@ function imageContent(tex,o){
 
 
  function words(value){return (value.match(/[A-Za-z]{3,}/g)||[]).length;}
- function plain(value){return esc(value).replace(/\\(?:qquad|quad)\b\s*/g,' ').replace(/\\par\s*/g,'<br>').replace(/\\([%&#_$])/g,'$1').replace(/~+/g,' ').replace(/\n/g,'<br>');}
- function math(value,display=false){if(value.includes('\\multicolumn')||value.includes('\\cline'))return imageContent(value,o);return `<${display?'div':'span'} class="${display?'lesson-image-block':'lesson-image-inline'}" data-math="${esc(value)}">${o.math?o.math(value):''}</${display?'div':'span'}>`;}
+ function plain(value){return esc(value).replace(/\\qquad\b\s*/g,'&emsp;&emsp;').replace(/\\quad\b\s*/g,'&emsp;').replace(/\\par\s*/g,'<br>').replace(/\\([%&#_$])/g,'$1').replace(/~+/g,' ').replace(/\n/g,'<br>');}
+ function math(value,display=false){const aligned=value.match(/^\\begin\{aligned\}([\s\S]*)\\end\{aligned\}$/);if(aligned&&!/\\(?:phantom|frac|dfrac|sqrt|left|begin)\{[^}]*\\text/.test(aligned[1])&&!value.includes('\\phantom')&&/\\text\{[^}]{25}/.test(value))return '<div class="lesson-flow-equations">'+aligned[1].split('\\\\').map(row=>'<div style="margin-bottom:.2em">'+render(row.replace(/&/g,' '))+'</div>').join('')+'</div>';if(value.includes('\\multicolumn')||value.includes('\\cline'))return imageContent(value,o);return `<${display?'div':'span'} class="${display?'lesson-image-block':'lesson-image-inline'}" data-math="${esc(value)}">${o.math?o.math(value):''}</${display?'div':'span'}>`;}
  function render(value,prose=false){let out='',last=0,i=0,found=false;
  const flush=end=>{const v=value.slice(last,end);if(!v.trim()){out+=v?' ':'';return;}out+=(prose||/\\par|[“”]/.test(v)||(!/\\[A-Za-z]|[=^_]/.test(v))||(words(v)>8&&!/\\(?!quad|qquad|par)[A-Za-z]/.test(v)))?plain(v):math(v);};
  while(i<value.length){if(value[i]==='\\'&&value[i-1]!=='\\'){
@@ -46,7 +46,7 @@ function imageContent(tex,o){
  if(!found&&!prose){if(!/\\[A-Za-z]|[=^_]/.test(value)||(words(value)>8&&!/\\(?!quad|qquad|par)[A-Za-z]/.test(value)))return plain(value);return math(value);}
  flush(value.length);return out;
  }
- return '<span class="lesson-image-prose">'+render(tex)+'</span>';
+ return '<span class="lesson-image-prose">'+tex.split(/\\par\b/).map(part=>'<span style="display:block;'+(/^\s*\\(?:qquad|quad)/.test(part)?'margin-left:2em;':'')+'">'+render(part.replace(/^\s*\\(?:qquad|quad)\s*/,''))+'</span>').join('').replace(/<\/span>([.,;:])/g,'</span>&#8288;$1')+'</span>';
 }
 
 function shape(s,o){const b=s.box;let transform=`translate(${b.x}px,${b.y}px)`;if(b.rotation)transform+=` rotate(${b.rotation}deg)`;if(b.flipH||b.flipV)transform+=` scale(${b.flipH?-1:1},${b.flipV?-1:1})`;let inner='';
@@ -60,7 +60,7 @@ function shape(s,o){const b=s.box;let transform=`translate(${b.x}px,${b.y}px)`;i
  }
  if(o.textFits?.[s.id])inner=inner.replace('class="lesson-text" style="','class="lesson-text" style="transform-origin:left top;transform:'+o.textFits[s.id]+';');
  let fitIndex=0;if(o.fitFonts?.[s.id])inner=inner.replace(/(class="lesson-image-tex" style="[^"]*?font-size:)[0-9.]+px/g,(all,prefix)=>prefix+(o.fitFonts[s.id][fitIndex++]||20)+'px');
- return `<div class="lesson-shape${s.cover?' lesson-answer-cover':''}" data-shape="${esc(s.id)}" ${s.webStage?`data-stage="${s.webStage}"`:""} ${s.cover?'role="button" tabindex="0" aria-label="Reveal this answer" aria-expanded="false"':''} style="position:absolute;left:0;top:0;width:${b.w}px;height:${b.h}px;transform-origin:center;transform:${transform};">${inner}</div>`;
+ return `<div class="lesson-shape${s.cover?' lesson-answer-cover':''}" data-shape="${esc(s.id)}" ${s.webStage?`data-stage="${s.webStage}"`:""} ${s.cover?'role="button" tabindex="0" aria-label="Reveal this answer" aria-expanded="false"':''} style="position:absolute;left:0;top:0;width:${b.w}px;height:${b.h}px;transform-origin:center;transform:${transform};${s.answerClips?`clip-path:path('${s.answerClips.map(r=>`M${r.x} ${r.y}h${r.w}v${r.h}h${-r.w}Z`).join(" ")}');`:s.answerFor?"overflow:hidden;":""}">${inner}</div>`;
 }
 function render(slide,deck,options={}){return `<div class="lesson-canvas${options.paper?' lesson-paper':''}" style="width:${deck.width}px;height:${deck.height}px;position:relative;background:white;overflow:hidden" data-slide="${slide.id}">${slide.shapes.map(s=>shape(s,{...options,sourceSlide:slide.sourceSlide})).join('')}</div>`;}
 const api={render,shape,geometry,imageContent,escape:esc};if(typeof module!=='undefined')module.exports=api;root.FMQ_SLIDE_RENDERER=api;

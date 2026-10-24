@@ -1,0 +1,25 @@
+{
+  "current": 11,
+  "releases": [
+    {
+      "version": 11,
+      "previous": 10,
+      "date": "2026-10-24",
+      "changes": [
+        "Restored source lesson content, notation, diagrams, question groupings and teaching sequences across all 14 Pure Year 1 chapters.",
+        "Replaced separate skill/topic theory booklets with complete chapter lesson booklets, two individually numbered slides per page, matching the board titles and blue banners.",
+        "Kept theory, hints and explanations in student booklets. Answer covers become writing spaces; revealed board answers use blue.",
+        "Added touch Next controls, independent question-mark answer covers and ticks. Removed technical reveal labels and footer counters.",
+        "Added consistent chapter title pages, red extension titles, boxed theory panels, corrected list indentation and centred binomial notation.",
+        "Kept the existing question library and Print Skill / Print Topic question printouts unchanged.",
+        "Added release history and preserved V10 for rollback."
+      ]
+    },
+    {
+      "version": 10,
+      "tag": "fmq-v10",
+      "commit": "7b19511209c0c277a0f169e0db53ca9af4cfcb23",
+      "description": "Previous published lesson viewer and question library; preserved before the V11 rebuild."
+    }
+  ]
+}
