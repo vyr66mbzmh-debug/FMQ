@@ -1,5 +1,11 @@
 # FMQ release history
 
+## V11.1 — 24 October 2026
+
+- Added independent answers to trigonometry Exercise 9G questions 8 and 9 (slides 54–55), including the rock-pool sketch and time interval.
+- Added matching blank answer spaces to the chapter booklet; retained two original slides per A4 page.
+- Kept other teaching slides, all question-library content and existing question printouts unchanged.
+
 ## V11 — 24 October 2026
 
 Changes from V10:

@@ -1,6 +1,16 @@
 {
-  "current": 11,
+  "current": "11.1",
   "releases": [
+    {
+      "version": "11.1",
+      "previous": 11,
+      "date": "2026-10-24",
+      "changes": [
+        "Added independent answers to trigonometry Exercise 9G questions 8 and 9 (slides 54\u201355), including the rock-pool sketch and time interval.",
+        "Added matching blank answer spaces to the chapter booklet; retained two original slides per A4 page.",
+        "Kept other teaching slides, all question-library content and existing question printouts unchanged."
+      ]
+    },
     {
       "version": 11,
       "previous": 10,
