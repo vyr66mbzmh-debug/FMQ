@@ -1,6 +1,17 @@
 {
-  "current": "12-pilot-1.7",
+  "current": "0.01",
   "releases": [
+    {
+      "version": "0.01",
+      "previous": "12-pilot-1.7",
+      "date": "2026-10-25",
+      "changes": [
+        "FMQ renamed Luisa with supplied navy-and-gold artwork",
+        "All14 Pure1 chapter opening titles repaired and fitted to their source canvas",
+        "Chapter catalogue lists all14 Pure1 chapters",
+        "Existing question library and checked Pure2 lessons retained"
+      ]
+    },
     {
       "version": "12-pilot-1.7",
       "previous": "12-pilot-1.6",
@@ -114,5 +125,6 @@
       "commit": "7b19511209c0c277a0f169e0db53ca9af4cfcb23",
       "description": "Previous published lesson viewer and question library; preserved before the V11 rebuild."
     }
-  ]
+  ],
+  "versionPolicy": "Increase by0.01 perrelease; Luisa v1 when complete content uploaded."
 }

@@ -50,7 +50,7 @@ async function navigate(s,record=true){
  $('previous').disabled=!r.skill.available||(!history.length&&next.question===1);for(const id of ['skip','random','choose','full','hide'])$(id).disabled=!r.skill.available||r.skill.reference;
  const hash=new URLSearchParams({course:next.course,book:next.book,topic:next.topic,skill:next.skill,question:next.question});
  try{window.history.replaceState(null,'','#'+hash);}catch{}
- document.title=`FMQ · ${r.skill.code} · Question ${next.question}`;
+ document.title=`Luisa · ${r.skill.code} · Question ${next.question}`;
  renderMath($('question'));renderMath($('solution'));
  renderSolution();
 }
