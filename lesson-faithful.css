@@ -8,3 +8,6 @@
 .source-slide:has([data-shape="shift-a"]) .katex,.source-slide:has([data-shape="pool-a"]) .katex{font-size:1em}
 
 .chapter-cover{flex-direction:column;padding:60px;background:#102b43;color:#d4ab58;overflow:hidden}.chapter-cover h2{max-width:100%;margin:0;font-size:52px;white-space:normal;overflow-wrap:break-word}.title-page .source-body{width:100%;height:100%}
+
+/* Extend opening-slide colour across the viewport without stretching the slide. */
+#slide-region.chapter-opening{background:#102b43;}

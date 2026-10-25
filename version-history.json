@@ -1,6 +1,18 @@
 {
-  "current": "0.01",
+  "current": "2",
   "releases": [
+    {
+      "version": "2",
+      "previous": "0.01",
+      "date": "2026-10-25",
+      "changes": [
+        "Completed Pure 2 Chapters 3\u20135; 102 additional native slides",
+        "Five Pure 2 chapters:247 slides and125 student-booklet pages",
+        "Radians animation and independent answer reveals checked",
+        "Pure1 title slide side backgrounds corrected",
+        "Evidence-based development progress refreshed"
+      ]
+    },
     {
       "version": "0.01",
       "previous": "12-pilot-1.7",
@@ -126,5 +138,5 @@
       "description": "Previous published lesson viewer and question library; preserved before the V11 rebuild."
     }
   ],
-  "versionPolicy": "Increase by0.01 perrelease; Luisa v1 when complete content uploaded."
+  "versionPolicy": "Luisa v2 per explicit release instruction; future numbering to follow user direction."
 }
