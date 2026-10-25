@@ -1,9 +1,19 @@
 {
-  "current": "12-pilot-1.3",
+  "current": "12-pilot-1.4",
   "releases": [
     {
+      "version": "12-pilot-1.4",
+      "previous": "12-pilot-1.3",
+      "date": "2026-10-25",
+      "changes": [
+        "Sequences and Series preview: first 10 of 69 slides, with worked answers",
+        "Matching five-page student booklet and complete textbook chapter",
+        "30 viewport checks, click/Next/Reset, 46 mathematical checks and visual print review"
+      ]
+    },
+    {
       "version": "12-pilot-1.3",
-      "previous": "12-pilot-1.1",
+      "previous": "12-pilot-1.2",
       "date": "2026-10-25",
       "changes": [
         "Functions and Graphs: all 63 slides with worked solutions",
