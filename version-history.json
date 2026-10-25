@@ -1,6 +1,16 @@
 {
-  "current": "12-pilot-1.1",
+  "current": "12-pilot-1.2",
   "releases": [
+    {
+      "version": "12-pilot-1.2",
+      "previous": "12-pilot-1.1",
+      "date": "2026-10-25",
+      "changes": [
+        "Functions and Graphs: first 20 of 63 slides",
+        "Native questions, solutions, graphs and interactive choices",
+        "10-page student booklet, two slides per A4 page"
+      ]
+    },
     {
       "version": "12-pilot-1.1",
       "previous": "12-pilot-1",
