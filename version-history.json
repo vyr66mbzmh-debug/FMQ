@@ -1,6 +1,16 @@
 {
-  "current": "11.1",
+  "current": "12-pilot-1",
   "releases": [
+    {
+      "version": "12-pilot-1",
+      "previous": "11.1",
+      "date": "2026-10-25",
+      "changes": [
+        "Pure Year 2 Chapter1:44 web slides",
+        "22-page student booklet",
+        "Teaching chapters navigation; original question library retained"
+      ]
+    },
     {
       "version": "11.1",
       "previous": 11,
