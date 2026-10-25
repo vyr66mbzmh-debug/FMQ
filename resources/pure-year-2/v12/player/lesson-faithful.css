@@ -33,3 +33,8 @@
 [data-resource-link] *{color:#1760a6!important;text-decoration:underline!important;cursor:pointer}
 
 .lesson-answer-cover .lesson-text,.lesson-answer-cover .lesson-text *{color:#173b60!important}
+
+/* Display mathematics uses full-size fractions and a shared left alignment. */
+.lesson-image-block>.katex-display{margin:.25em 0;text-align:left}.lesson-image-block>.katex-display>.katex{text-align:left}
+
+[data-equation-question] .katex-display>.katex{text-align:right}

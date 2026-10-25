@@ -1,6 +1,16 @@
 {
-  "current": "12-pilot-1",
+  "current": "12-pilot-1.1",
   "releases": [
+    {
+      "version": "12-pilot-1.1",
+      "previous": "12-pilot-1",
+      "date": "2026-10-25",
+      "changes": [
+        "Algebraic Methods: native typesetting and aligned reveals",
+        "Missing worked answers and interactive choices",
+        "44 slides checked at three sizes; 22 booklet pages checked"
+      ]
+    },
     {
       "version": "12-pilot-1",
       "previous": "11.1",
