@@ -1,6 +1,17 @@
 {
-  "current": "12-pilot-1.4",
+  "current": "12-pilot-1.5",
   "releases": [
+    {
+      "version": "12-pilot-1.5",
+      "previous": "12-pilot-1.4",
+      "date": "2026-10-25",
+      "changes": [
+        "Extended Sequences and Series from10 to20 of69 slides",
+        "Native LaTeX theory, arithmetic-series proofs and complete worked answers",
+        "Ten-page student booklet, two slides perpage",
+        "60 viewport checks, click/Next/Reset,68 maths checks and visual print review"
+      ]
+    },
     {
       "version": "12-pilot-1.4",
       "previous": "12-pilot-1.3",
