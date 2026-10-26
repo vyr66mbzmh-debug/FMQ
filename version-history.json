@@ -1,6 +1,18 @@
 {
-  "current": "0.06",
+  "current": "0.07",
   "releases": [
+    {
+      "version": "0.07",
+      "previous": "0.06",
+      "date": "2026-10-26",
+      "changes": [
+        "Rebuilt Pure Year 1 Chapter 2 Quadratics: 49 content slides, retaining the corrected title slide.",
+        "Consistent native text and LaTeX, white backgrounds, inline numbering, complete answer concealment and logical click/Space reveal order.",
+        "Redrawn proportional quadratic diagrams and corrected omitted or extraneous solutions.",
+        "Rebuilt the 25-page student handout with two slides per page and answers removed.",
+        "50 chapter slides now have recorded source, visual, interaction and print checks. Other unchecked Pure Year 1 chapters remain on the repair list."
+      ]
+    },
     {
       "version": "0.06",
       "previous": "0.05",
