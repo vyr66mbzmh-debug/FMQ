@@ -153,5 +153,5 @@
       "description": "Previous published lesson viewer and question library; preserved before the V11 rebuild."
     }
   ],
-  "versionPolicy": "Luisa v2 per explicit release instruction; future numbering to follow user direction."
+  "versionPolicy": "Luisa starts at v0.01 and increases by 0.01 per release; v1 follows completion of the planned content upload."
 }
