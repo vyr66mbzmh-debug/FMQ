@@ -1,6 +1,16 @@
 {
-  "current": "0.03",
+  "current": "0.04",
   "releases": [
+    {
+      "version": "0.04",
+      "previous": "0.03",
+      "date": "2026-10-26",
+      "changes": [
+        "Consistent Pure Year 1 resource button layout across every book",
+        "Skill-specific chapter links; missing resources greyed out independently",
+        "All 269 skill views checked for consistent layout"
+      ]
+    },
     {
       "version": "0.03",
       "previous": "0.02",
