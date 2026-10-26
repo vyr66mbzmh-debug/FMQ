@@ -1,4 +1,13 @@
-# FMQ release history
+# Luisa release history
+
+## Luisa v0.02 — 26 October 2026
+
+- Corrected the erroneous v2 label; releases increment by0.01.
+- Rebuilt Pure1 Chapter1 question/answer layouts, numbering, concealment and reveal order.
+- Checked31 slides at3 viewport sizes and the16-page student booklet.
+- White slide backgrounds across the existing lesson viewers.
+- Existing Pure2 Chapters1–5 retained.
+
 
 ## V11.1 — 24 October 2026
 

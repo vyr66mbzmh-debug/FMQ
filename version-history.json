@@ -1,16 +1,19 @@
 {
-  "current": "2",
+  "current": "0.02",
   "releases": [
     {
-      "version": "2",
+      "version": "0.02",
       "previous": "0.01",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "changes": [
         "Completed Pure 2 Chapters 3\u20135; 102 additional native slides",
         "Five Pure 2 chapters:247 slides and125 student-booklet pages",
         "Radians animation and independent answer reveals checked",
         "Pure1 title slide side backgrounds corrected",
-        "Evidence-based development progress refreshed"
+        "Evidence-based development progress refreshed",
+        "Corrected the erroneous v2 label to v0.02; future releases increase by0.01",
+        "Rebuilt Pure1 Chapter1 with native LaTeX, complete answer concealment and logical reveal order",
+        "White slide backgrounds,31-slide visual and interaction review,16-page student booklet"
       ]
     },
     {
