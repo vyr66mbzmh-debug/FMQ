@@ -1,6 +1,17 @@
 {
-  "current": "0.16",
+  "current": "0.17",
   "releases": [
+    {
+      "version": "0.17",
+      "previous": "0.16",
+      "date": "2026-10-26",
+      "changes": [
+        "Completed Pure Year 1 Chapter 13 Integration: 46 slides and a 23-page student booklet.",
+        "Rebuilt 45 content slides with measured LaTeX, proportional diagrams and ordered answer reveals.",
+        "Restored the area-subtraction animation and checked worked answers independently.",
+        "Source, screen, interaction and print checks recorded; user acceptance remains separate."
+      ]
+    },
     {
       "version": "0.16",
       "previous": "0.15",
