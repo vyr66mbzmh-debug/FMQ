@@ -1,6 +1,18 @@
 {
-  "current": "0.02",
+  "current": "0.03",
   "releases": [
+    {
+      "version": "0.03",
+      "previous": "0.02",
+      "date": "2026-10-26",
+      "changes": [
+        "Core Pure 2 Chapter 1: 64 native mathematical slides and 32-page student booklet",
+        "Mechanics Year 2 Chapter 5: 28 native slides and 14-page student booklet",
+        "All 62 textbook chapters listed; unavailable resources greyed out",
+        "Question-library teaching links across all supplied years and subjects",
+        "276 viewport checks, reveal/reset checks and visual booklet review; user acceptance pending"
+      ]
+    },
     {
       "version": "0.02",
       "previous": "0.01",
