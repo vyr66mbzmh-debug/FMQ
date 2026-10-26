@@ -1,6 +1,6 @@
 'use strict';
 (()=>{
-if(['1','2','3','4','5','6'].includes(new URLSearchParams(location.search).get('chapter'))){location.replace('pure1-native-viewer.html'+location.search);return;}
+if(['1','2','3','4','5','6','7'].includes(new URLSearchParams(location.search).get('chapter'))){location.replace('pure1-native-viewer.html'+location.search);return;}
 
 const $=id=>document.getElementById(id),base='resources/pure-year-1/v11/',assets='resources/pure-year-1/native/',params=new URLSearchParams(location.search),decks=new Map();let index,skill,refs=[],position=0,slide,deck,step=0,counts={},timers=[],running=[],lastPlayed=null;
 const flat=xs=>xs.flatMap(x=>[x,...flat(x.children||[])]),find=id=>$('slide-content').querySelector(`[data-shape="${CSS.escape(id)}"]`);
