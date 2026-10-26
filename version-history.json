@@ -1,6 +1,18 @@
 {
-  "current": "0.04",
+  "current": "0.05",
   "releases": [
+    {
+      "version": "0.05",
+      "previous": "0.04",
+      "date": "2026-10-26",
+      "changes": [
+        "Added textbook chapter view alongside the existing skill question library, covering all 62 chapters across eight books.",
+        "Added chapter/subtopic selection, worked-answer reveals, and two-way navigation that preserves the selected question.",
+        "Teaching slides, textbook chapters and student booklets appear together; unavailable resources are greyed out.",
+        "Indexed 2,838 eligible question entries: 68 individually reviewed mappings and 2,770 provisional chapter groupings awaiting individual review. Another 3,380 standard Maths entries await eligibility and mapping review. Full mapping remains unfinished.",
+        "Added support for future resources from multiple providers and for questions relevant to more than one chapter. No new slides or booklets were added in this release."
+      ]
+    },
     {
       "version": "0.04",
       "previous": "0.03",

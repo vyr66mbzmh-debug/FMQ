@@ -29,6 +29,7 @@ async function navigate(s,record=true){
  current=next;mode='hidden';stage=0;$('edexcel-only').closest('label').hidden=r.course.supportsEdexcelFilter===false;
  populate('course',library.courses,next.course);populate('book',r.course.books,next.book);populate('topic',isEdexcelOnly()?r.book.topics.filter(t=>t.skills.some(s=>s.edexcel)):r.book.topics,next.topic);
  window.FMQ_LESSONS?.update(r);
+ const textbookLink=document.getElementById('textbook-view-link');if(textbookLink)textbookLink.href='textbook-view.html#'+new URLSearchParams({course:next.course,book:next.book,fromSkill:next.skill,fromQuestion:String(next.question)});
  $('breadcrumbs').textContent=[r.course.title,r.book.title,r.topic.title].join(' › ');
  $('skilltitle').textContent=`${r.skill.code} ${r.skill.title}`;
  $('print-topic').disabled=r.course.id==='maths-a-level'&&!r.topic.printoutPath;$('print-skill').disabled=r.course.id==='maths-a-level'&&!r.skill.printoutPath;
