@@ -1,6 +1,17 @@
 {
-  "current": "0.14",
+  "current": "0.15",
   "releases": [
+    {
+      "version": "0.15",
+      "previous": "0.14",
+      "date": "2026-10-26",
+      "changes": [
+        "Completed Pure Year 1 Chapter 11 Vectors: 40 slides and a 20-page student booklet.",
+        "Rebuilt 39 content slides with measured LaTeX layouts, proportional diagrams, hanging indents and logical answer reveal order.",
+        "Corrected vector algebra and supplied complete worked solutions.",
+        "Source, screen, interaction and print checks recorded; user acceptance remains separate."
+      ]
+    },
     {
       "version": "0.14",
       "previous": "0.13",
