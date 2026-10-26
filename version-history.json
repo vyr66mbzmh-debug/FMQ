@@ -1,6 +1,17 @@
 {
-  "current": "0.15",
+  "current": "0.16",
   "releases": [
+    {
+      "version": "0.16",
+      "previous": "0.15",
+      "date": "2026-10-26",
+      "changes": [
+        "Completed Pure Year 1 Chapter 12 Differentiation: 78 slides and a 39-page student booklet.",
+        "Rebuilt 57 slides with measured LaTeX layouts, proportional diagrams and logical reveal order.",
+        "Corrected source mathematics and restored full worked solutions.",
+        "All slides checked for source, screen, interaction and print; user acceptance remains separate."
+      ]
+    },
     {
       "version": "0.15",
       "previous": "0.14",
