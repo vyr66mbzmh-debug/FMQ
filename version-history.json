@@ -1,6 +1,17 @@
 {
-  "current": "0.12",
+  "current": "0.13",
   "releases": [
+    {
+      "version": "0.13",
+      "previous": "0.12",
+      "date": "2026-10-26",
+      "changes": [
+        "Rebuilt Pure Year 1 Chapter 8 Binomial Expansion: 38 content slides plus the corrected title.",
+        "Consistent LaTeX, white backgrounds, proportional graphs, answer concealment and logical click/Space reveal order.",
+        "Rebuilt the 20-page student handout with two slides per page and answer content removed.",
+        "39 chapter slides have recorded source, visual, interaction and print checks. User acceptance remains separate."
+      ]
+    },
     {
       "version": "0.12",
       "previous": "0.11",
