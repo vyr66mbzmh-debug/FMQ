@@ -1,6 +1,18 @@
 {
-  "current": "0.05",
+  "current": "0.06",
   "releases": [
+    {
+      "version": "0.06",
+      "previous": "0.05",
+      "date": "2026-10-26",
+      "changes": [
+        "Mapped 3,353 Edexcel-compatible standard Maths practice entries across Pure, Mechanics and Statistics Years 1 and 2.",
+        "Pure Year 1 Quadratics now includes 95 practice entries. Missing Edexcel tags no longer exclude compatible content.",
+        "Recorded 71 explicit exclusions: other-board large data sets, Spearman rank material, and one mixed critical-table reference. All remain in skill view.",
+        "Preserved all existing Further Maths mappings. Precise subtopic review remains separate from chapter-level grouping.",
+        "No new slide acceptance is claimed in this release. Pure Year 1 slide repairs continue separately."
+      ]
+    },
     {
       "version": "0.05",
       "previous": "0.04",
