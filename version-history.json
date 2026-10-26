@@ -1,6 +1,17 @@
 {
-  "current": "0.17",
+  "current": "0.18",
   "releases": [
+    {
+      "version": "0.18",
+      "previous": "0.17",
+      "date": "2026-10-26",
+      "changes": [
+        "Completed Pure Year 1 Chapter 14 Exponentials and Logarithms: 54 slides and a 27-page student booklet.",
+        "Rebuilt 52 content slides with measured LaTeX, proportional diagrams and ordered answer reveals.",
+        "Checked logarithm animation, worked answers, screen layout and student print output.",
+        "All 14 Pure Year 1 chapters now have recorded source, visual, interaction and print checks; user acceptance remains separate."
+      ]
+    },
     {
       "version": "0.17",
       "previous": "0.16",
