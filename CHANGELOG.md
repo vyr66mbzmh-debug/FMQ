@@ -1,3 +1,7 @@
+## Luisa v0.22 — 27 October 2026
+
+Mechanics Year 1: 114 checked slides and 58 booklet pages across chapters 8–11. Master workspace migrated to _LUISA with complete source material and recovery package. ADA backup refreshed.
+
 # Luisa release history
 
 ## Luisa v0.02 — 26 October 2026
