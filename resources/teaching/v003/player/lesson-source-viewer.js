@@ -2,7 +2,7 @@
 (()=>{
 const buildRevision='luisa003';
 const bookKey=new URLSearchParams(location.search).get('book')||'further-core-pure-2';
-const bookBases={'further-core-pure-1':'core-pure-1','further-core-pure-1':'core-pure-1','further-core-pure-2':'core-pure-2','maths-applied-year-2':'applied-year-2'};
+const bookBases={'further-core-pure-1':'core-pure-1','maths-pure-year-2':'pure-year-2','further-core-pure-2':'core-pure-2','maths-applied-year-2':'applied-year-2'};
 const resourceBase='resources/teaching/v003/'+(bookBases[bookKey]||'core-pure-2')+'/';
 const $=id=>document.getElementById(id),base=resourceBase,assets=resourceBase,params=new URLSearchParams(location.search),decks=new Map();let index,skill,refs=[],position=0,slide,deck,step=0,counts={},timers=[],running=[],lastPlayed=null;
 const flat=xs=>xs.flatMap(x=>[x,...flat(x.children||[])]),find=id=>$('slide-content').querySelector(`[data-shape="${CSS.escape(id)}"]`);

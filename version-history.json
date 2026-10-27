@@ -1,6 +1,16 @@
 {
-  "current": "0.19",
+  "current": "0.20",
   "releases": [
+    {
+      "version": "0.20",
+      "previous": "0.19",
+      "date": "2026-10-27",
+      "changes": [
+        "Six chapters: Core Pure 1 Vectors; Core Pure 2 Series, Methods in Calculus, Volumes of Revolution, Polar Coordinates; Pure Year 2 Parametric Equations.",
+        "301 slides and 153 student booklet pages; source, visual, interaction and print checks completed.",
+        "Corrected slide links in HTML email reports. User review remains separate."
+      ]
+    },
     {
       "version": "0.19",
       "previous": "0.18",
