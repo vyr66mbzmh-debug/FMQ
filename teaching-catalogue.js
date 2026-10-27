@@ -300,8 +300,8 @@ window.LUISA_TEACHING = {
       {
         "number": 4,
         "title": "Moments",
-        "slides": null,
-        "booklet": null,
+        "slides": "teaching-lesson-viewer.html?book=maths-applied-year-2&chapter=4&slide=1",
+        "booklet": "resources/teaching/v003/applied-year-2/booklets/chapter-04.pdf",
         "pdf": null
       },
       {

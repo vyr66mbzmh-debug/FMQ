@@ -1,6 +1,14 @@
 {
-  "current": "0.22",
+  "current": "0.23",
   "releases": [
+    {
+      "version": "0.23",
+      "previous": "0.22",
+      "date": "2026-10-27",
+      "changes": [
+        "Mechanics Year 2 Chapter 4 \u2014 Moments: 42 checked slides and a 21-page student booklet."
+      ]
+    },
     {
       "version": "0.22",
       "previous": "0.21",
