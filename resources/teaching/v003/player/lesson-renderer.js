@@ -46,8 +46,8 @@ function imageContent(tex,o){
  flush(value.length);return out;
  }
  return '<span class="lesson-image-prose">'+tex.split(/\\par\b/).map(part=>{
- const m=part.match(/^\s*(?:\\textbf\{([a-z])[.)]?\}|([a-z])[.)]?)\s+(?=[A-Z\\])/);
- if(m)return '<span class="lesson-subpart" style="display:block;position:relative;margin-left:1.4em;padding-left:1.6em"><span style="position:absolute;left:0">'+esc(m[1]||m[2])+'.</span>'+render(part.slice(m[0].length))+'</span>';
+ const m=part.match(/^\s*(?:\\textbf\{([a-z])[.)]?\}|(\d+[a-z]?[.)]|[a-z][.)]|[•]))\s+/);
+ if(m)return '<span class="lesson-subpart" style="display:block;position:relative;margin-left:1.4em;padding-left:1.6em"><span style="position:absolute;left:0">'+esc(m[1]?m[1]+'.':m[2])+'</span>'+render(part.slice(m[0].length))+'</span>';
  return '<span style="display:block;'+(/^\s*\\(?:qquad|quad)/.test(part)?'margin-left:2em;':'')+'">'+render(part.replace(/^\s*\\(?:qquad|quad)\s*/,''))+'</span>';
  }).join('').replace(/<\/span>([.,;:])/g,'</span>&#8288;$1')+'</span>';
 }

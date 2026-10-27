@@ -1,6 +1,17 @@
 {
-  "current": "0.18",
+  "current": "0.19",
   "releases": [
+    {
+      "version": "0.19",
+      "previous": "0.18",
+      "date": "2026-10-27",
+      "changes": [
+        "Core Pure 1: Matrices (66 slides), Proof by Induction (35), Argand Diagrams (41), Linear Transformations (51).",
+        "Four student booklets: 98 A4 pages, two slides per page, with expanded writing space.",
+        "Native LaTeX, proportional diagrams, complete answer concealment and logical reveal order.",
+        "193 slides checked at three screen sizes; source, visual, interaction and print checks recorded. User acceptance pending."
+      ]
+    },
     {
       "version": "0.18",
       "previous": "0.17",
