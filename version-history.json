@@ -1,6 +1,15 @@
 {
-  "current": "0.20",
+  "current": "0.21",
   "releases": [
+    {
+      "version": "0.21",
+      "previous": "0.20",
+      "date": "2026-10-27",
+      "changes": [
+        "Replaced Pure Year 2 Chapter 12 Vectors source with the newly supplied 22-slide deck.",
+        "22 native mathematics slides and an 11-page student booklet, with expanded writing areas and checked reveal order."
+      ]
+    },
     {
       "version": "0.20",
       "previous": "0.19",
