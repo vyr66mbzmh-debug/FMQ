@@ -159,7 +159,7 @@ window.LUISA_TEACHING = {
         "title": "Parametric equations",
         "slides": "teaching-lesson-viewer.html?book=maths-pure-year-2&chapter=8&slide=1",
         "booklet": "resources/teaching/v003/pure-year-2/booklets/chapter-08.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/pure-year-2/textbook/chapter-08.pdf"
       },
       {
         "number": 9,
@@ -187,7 +187,7 @@ window.LUISA_TEACHING = {
         "title": "Vectors",
         "slides": "teaching-lesson-viewer.html?book=maths-pure-year-2&chapter=12&slide=1",
         "booklet": "resources/teaching/v003/pure-year-2/booklets/chapter-12.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/pure-year-2/textbook/chapter-12.pdf"
       }
     ]
   },
@@ -398,7 +398,7 @@ window.LUISA_TEACHING = {
         "title": "Vectors",
         "slides": "teaching-lesson-viewer.html?book=further-core-pure-1&chapter=9&slide=1",
         "booklet": "resources/teaching/v003/core-pure-1/booklets/chapter-09.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/core-pure-1/textbook/chapter-09.pdf"
       }
     ]
   },
@@ -417,28 +417,28 @@ window.LUISA_TEACHING = {
         "title": "Series",
         "slides": "teaching-lesson-viewer.html?book=further-core-pure-2&chapter=2&slide=1",
         "booklet": "resources/teaching/v003/core-pure-2/booklets/chapter-02.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/core-pure-2/textbook/chapter-02.pdf"
       },
       {
         "number": 3,
         "title": "Methods in calculus",
         "slides": "teaching-lesson-viewer.html?book=further-core-pure-2&chapter=3&slide=1",
         "booklet": "resources/teaching/v003/core-pure-2/booklets/chapter-03.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/core-pure-2/textbook/chapter-03.pdf"
       },
       {
         "number": 4,
         "title": "Volumes of revolution",
         "slides": "teaching-lesson-viewer.html?book=further-core-pure-2&chapter=4&slide=1",
         "booklet": "resources/teaching/v003/core-pure-2/booklets/chapter-04.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/core-pure-2/textbook/chapter-04.pdf"
       },
       {
         "number": 5,
         "title": "Polar coordinates",
         "slides": "teaching-lesson-viewer.html?book=further-core-pure-2&chapter=5&slide=1",
         "booklet": "resources/teaching/v003/core-pure-2/booklets/chapter-05.pdf",
-        "pdf": null
+        "pdf": "resources/teaching/v003/core-pure-2/textbook/chapter-05.pdf"
       },
       {
         "number": 6,
